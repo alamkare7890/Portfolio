@@ -1,0 +1,53 @@
+/*
+    --e-global-color-primary: #D16527;
+    --e-global-color-secondary: #121212;
+    --e-global-color-text: #161616;
+    --e-global-color-accent: #242424;
+    --e-global-color-11fee7f: #606060;
+    --e-global-color-7ff2b2d: #C6C6C6;
+    --e-global-color-0d3036c: #EDEDED;
+    --e-global-color-024918e: #ECCD39
+*/
+/*=========Color-Variable========*/
+/*=========Font-Variable========*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-head {
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.secondary-head {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.flex-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*===============header-section===============*/
+/*===============perfomence-section===============*/
+/*===============service-section===============*/
+/*===============repairs-section===============*/
+/*===============inforamtion-section===============*/
+/*===============process-section===============*/
+/*===============article-section===============*/
+/*===============contact-section===============*/
+/*===============about-section===============*/
+/*===============header-section===============*/
+/*===============header-section===============*/
