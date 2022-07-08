@@ -259,7 +259,9 @@ html, body {
 }
 .home-space .image img {
   width: 100%;
-  height: auto;
+  height: 700px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /*===============header-section===============*/
