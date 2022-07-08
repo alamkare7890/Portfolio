@@ -1,5 +1,10 @@
 /*=============Color-variable===========*/
 /*=============Font-variable===========*/
+.navigation .nav-btn {
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +16,7 @@ html, body {
   width: 100%;
   height: 100%;
   font-family: "Poppins", sans-serif;
+  background-color: #212428;
 }
 
 .main-head {
@@ -48,6 +54,68 @@ html, body {
   color: #c4cfde;
 }
 
+.max-width {
+  max-width: 1366px;
+}
+
+/*===============nav-section===============*/
+.navigation {
+  width: 100%;
+  background-color: #212428;
+  padding: 18px 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation .nav-whole {
+  padding: 0 50px;
+}
+.navigation .nav-whole li {
+  margin-left: 25px;
+  text-transform: uppercase;
+}
+.navigation .nav-whole li a {
+  font-size: 0.75rem;
+  color: #c4cfde;
+}
+.navigation .nav-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.4s linear;
+  display: flex;
+  border-radius: 3px;
+}
+.navigation .nav-btn::before {
+  content: " ";
+  position: absolute;
+  width: 85%;
+  height: 7%;
+  background-color: #F8024E;
+  box-shadow: 0 15px 0 0 #F8024E;
+  transform: translateY(-15px);
+}
+.navigation .nav-btn::after {
+  content: " ";
+  position: absolute;
+  width: 85%;
+  height: 7%;
+  background-color: #F8024E;
+  transform: translateY(15px);
+}
+.navigation .nav-btn.active::before {
+  box-shadow: 0 -15px 0 0 #F8024E;
+  transform: translateY(0);
+}
+.navigation .nav-btn.active::after {
+  transform: translateY(0);
+}
+
+@media only screen and (max-width: 1200px) {
+  .navigation .nav-whole {
+    display: none;
+  }
+}
 /*===============header-section===============*/
 /*===============perfomence-section===============*/
 /*===============service-section===============*/

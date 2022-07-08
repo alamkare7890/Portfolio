@@ -33,6 +33,7 @@ html,body{
     width: 100%;
     height: 100%;
     font-family: $headFont;
+    background-color: $mainbgColor;
 }
 .main-head{
     font-size: 2.5rem;
@@ -64,6 +65,13 @@ html,body{
     font-weight: 400;
     color: $textColor;
 }
+.max-width{
+    max-width: 1366px;
+
+}
+/*===============nav-section===============*/
+@import "navCustom";   
+ 
 /*===============header-section===============*/
 /*===============perfomence-section===============*/
 /*===============service-section===============*/
