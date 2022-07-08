@@ -72,13 +72,20 @@ html,body{
     text-transform: uppercase;
 
 }
+.dif-title{
+    font-size: 0.75rem;
+    color: $textColor;
+    font-weight: 400;
+    text-transform: uppercase; 
+
+}
 .max-width{
     max-width: 1366px;
 
 }
 /*===============nav-section===============*/
 @import "navCustom";   
- 
+@import "headerspace"; 
 /*===============header-section===============*/
 /*===============perfomence-section===============*/
 /*===============service-section===============*/

@@ -9,16 +9,15 @@ var myToggle = document.getElementById('menuBth');
 
 $(document).ready(function () {
 
-    $(window).scroll(function () {
-        $a = 50;
-            if(a  => 5) {
-                $('navFixed').addClass('nav-fixed');     
-            }else{
-                $('navFixed').removeClass('nav-fixed');     
+    $(window).scroll(function(){
+        $toggle = $(window).scrollTop();
+        if($toggle > 50){
+            $('#navFixed').addClass('nav-fixed');
+        }else{
+            $('#navFixed').removeClass('nav-fixed');
 
-            }
-    
-    }) 
+        }
+    })
 
  
 })
