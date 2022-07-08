@@ -1,28 +1,71 @@
 .home-space{
     padding-bottom: 100px;
     .home-intro{
-        
+        border-bottom: 2px solid $bgColor;
         padding: 50px 0;
-        border: 1px solid red;
 
         h1{
             color: $headColor;
-
+            line-height: 1.2;
             span{
                 color: $primeColor;
             }
 
         }
 
+        .icon{
+            margin-top: 20px;
+            color: $textColor;
+            width: 65px;
+            height: 65px;
+            @extend %flexCenter; 
+            background-color: $bgColor; 
+            margin-right: 25px; 
+            box-shadow: $shadow;
+            border-radius: 5px;
+        }
+
+        .skill-lab{
+            margin-top: 20px;
+            .skill{
+                margin-right: 25px;
+                width: 65px;
+                height: 65px;
+                @extend %flexCenter;
+                background-color: $bgColor; 
+                box-shadow: $shadow;
+                border-radius: 5px;
+                
+                img{
+                    width: 75%;
+                    height: 25px;
+                    object-fit: contain;
+                }
+            }
+
+        }
+
+
+
     }
 
     .image{
-
+        position: relative; 
+        z-index: 0;
         img{
             width: 100%;
             height: 700px;
             object-fit: contain;
         }
     }
-
+    .image::before{
+        content: "";
+        box-shadow: $shadow;    
+        position: absolute;
+        bottom: 0;
+        transform: translateX(10%);
+        width: 85%;
+        height: 80%;
+        z-index: -1;
+    }
 }  

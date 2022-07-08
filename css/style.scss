@@ -5,9 +5,15 @@ $primeColor: #F8024E;
 $textColor: #c4cfde;
 $headColor: #fff;
 $secondheadColor: #878e99;
+$shadowColor: #1c1e22;
+$shadowBorder: #181a1d;
+$shadowInset-2: #202225;
+$shadowInset: #262a2e;
 /*=============Font-variable===========*/
 $headFont: 'Poppins', sans-serif;
 $secondaryFont: 'Montserrat', sans-serif;
+$shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+$shadow-2:inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
 %mainBtn{
     padding: 12px 35px;
     text-decoration: none;
@@ -15,7 +21,8 @@ $secondaryFont: 'Montserrat', sans-serif;
     font-size: 0.75rem;
     text-transform: uppercase;
 
-}
+}    
+     
 %flexCenter{
     justify-content: center;
     align-items: center;
@@ -32,6 +39,7 @@ html,body{
     font-size: 24px;
     width: 100%;
     height: 100%;
+    line-height: 1.5;
     font-family: $headFont;
     background-color: $mainbgColor;
 }
@@ -39,17 +47,23 @@ html,body{
     font-size: 2.5rem;
     font-weight: 700;
     font-family: $secondaryFont;
+    padding-bottom: 10px;
+
 
 }
 .secondary-head{
     font-size: 1.5rem;
     font-weight: 500;
     font-family: $secondaryFont;
+    padding-bottom: 10px;
+
 }
 .small-head{
     font-size: 1.2rem;
     font-weight: 500;
     font-family: $secondaryFont;
+    padding-bottom: 10px;
+
 }
 .flex-content{
     display: flex;
@@ -59,11 +73,15 @@ html,body{
     color: $primeColor;
     font-size: 0.75rem;
     font-weight: 400;
+    padding-bottom: 10px;
+
 }
 .para{
     font-size: 0.75rem;
     font-weight: 400;
     color: $textColor;
+    padding-bottom: 10px;
+    line-height: 1.5;
 }
 .title{
     font-size: 0.75rem;
@@ -77,17 +95,23 @@ html,body{
     color: $textColor;
     font-weight: 400;
     text-transform: uppercase; 
+    padding-bottom: 10px;
+
 
 }
 .max-width{
     max-width: 1366px;
 
 }
+.design-border{
+    border-bottom: 3px solid $bgColor;
+}
 /*===============nav-section===============*/
 @import "navCustom";   
-@import "headerspace"; 
 /*===============header-section===============*/
+@import "headerspace"; 
 /*===============perfomence-section===============*/
+@import "perform"
 /*===============service-section===============*/
 /*===============repairs-section===============*/
 /*===============inforamtion-section===============*/

@@ -1,6 +1,6 @@
 /*=============Color-variable===========*/
 /*=============Font-variable===========*/
-.navigation .nav-btn {
+.home-space .home-intro .skill-lab .skill, .home-space .home-intro .icon, .navigation .nav-btn {
   justify-content: center;
   align-items: center;
 }
@@ -15,6 +15,7 @@ html, body {
   font-size: 24px;
   width: 100%;
   height: 100%;
+  line-height: 1.5;
   font-family: "Poppins", sans-serif;
   background-color: #212428;
 }
@@ -23,18 +24,21 @@ html, body {
   font-size: 2.5rem;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
+  padding-bottom: 10px;
 }
 
 .secondary-head {
   font-size: 1.5rem;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
+  padding-bottom: 10px;
 }
 
 .small-head {
   font-size: 1.2rem;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
+  padding-bottom: 10px;
 }
 
 .flex-content {
@@ -46,12 +50,15 @@ html, body {
   color: #F8024E;
   font-size: 0.75rem;
   font-weight: 400;
+  padding-bottom: 10px;
 }
 
 .para {
   font-size: 0.75rem;
   font-weight: 400;
   color: #c4cfde;
+  padding-bottom: 10px;
+  line-height: 1.5;
 }
 
 .title {
@@ -66,10 +73,15 @@ html, body {
   color: #c4cfde;
   font-weight: 400;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .max-width {
   max-width: 1366px;
+}
+
+.design-border {
+  border-bottom: 3px solid #1E2024;
 }
 
 /*===============nav-section===============*/
@@ -244,18 +256,51 @@ html, body {
     display: flex;
   }
 }
+/*===============header-section===============*/
 .home-space {
   padding-bottom: 100px;
 }
 .home-space .home-intro {
+  border-bottom: 2px solid #1E2024;
   padding: 50px 0;
-  border: 1px solid red;
 }
 .home-space .home-intro h1 {
   color: #fff;
+  line-height: 1.2;
 }
 .home-space .home-intro h1 span {
   color: #F8024E;
+}
+.home-space .home-intro .icon {
+  margin-top: 20px;
+  color: #c4cfde;
+  width: 65px;
+  height: 65px;
+  background-color: #1E2024;
+  margin-right: 25px;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  border-radius: 5px;
+}
+.home-space .home-intro .skill-lab {
+  margin-top: 20px;
+}
+.home-space .home-intro .skill-lab .skill {
+  margin-right: 25px;
+  width: 65px;
+  height: 65px;
+  background-color: #1E2024;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  border-radius: 5px;
+}
+.home-space .home-intro .skill-lab .skill img {
+  width: 75%;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.home-space .image {
+  position: relative;
+  z-index: 0;
 }
 .home-space .image img {
   width: 100%;
@@ -263,15 +308,28 @@ html, body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.home-space .image::before {
+  content: "";
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(10%);
+  width: 85%;
+  height: 80%;
+  z-index: -1;
+}
 
-/*===============header-section===============*/
 /*===============perfomence-section===============*/
-/*===============service-section===============*/
-/*===============repairs-section===============*/
-/*===============inforamtion-section===============*/
-/*===============process-section===============*/
-/*===============article-section===============*/
-/*===============contact-section===============*/
-/*===============about-section===============*/
-/*===============header-section===============*/
-/*===============header-section===============*//*# sourceMappingURL=style.css.map */
+.feature-space {
+  padding-top: 50px 0;
+}
+.feature-space h2 {
+  color: #c4cfde;
+}
+.feature-space .facility svg {
+  width: 50px;
+  height: 50px;
+  color: #F8024E;
+  stroke: #F8024E;
+  fill: none;
+}/*# sourceMappingURL=style.css.map */
