@@ -65,6 +65,13 @@ html,body{
     font-weight: 400;
     color: $textColor;
 }
+.title{
+    font-size: 0.75rem;
+    color: $primeColor;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
 .max-width{
     max-width: 1366px;
 

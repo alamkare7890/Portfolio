@@ -10,6 +10,7 @@
 
     <title>PORTFOLIO</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -17,84 +18,109 @@
   <body>
     <!--------header-section----------->
     <header class="home-space">
-      <div class="container-fluid">
-        <nav class="navigation flex-content">
+      <div class="nav-rel" id="navFixed">
+        <nav class="navigation flex-content justify-content-between">
           <a href="#" class="logo">
             <img src="image/png/logo.png" alt="">          
           </a>
-          <ul class="nav-whole flex-content">
+          <ul class="nav-whole flex-content" id="menuOpen">
             <li>
+              <span class="icon">
+                <i class="fas fa-home"></i>
+              </span>
               <a href="">home</a>
             </li>
             <li>
+              <span class="icon">
+                <i class="fas fa-list"></i>
+              </span>
               <a href="">features</a>
             </li>
             <li>
+              <span class="icon">
+                <i class="far fa-file"></i>
+              </span>
               <a href="">portfolio</a>
             </li>
             <li>
+              <span class="icon">
+                <i class="far fa-file"></i>
+              </span>
               <a href="">resume</a>
             </li>
             <li>
+              <span class="icon">
+                <i class="fas fa-dollar-sign"></i>
+              </span>
               <a href="">clients</a>
+
             </li>
             <li>
+              <span class="icon">
+                <i class="fas fa-dollar-sign"></i>
+              </span>
               <a href="">pricing</a>
             </li>
             <li>
+              <span class="icon">
+                <i class="fas fa-blog"></i>
+              </span>
               <a href="">blog</a>
             </li>
             <li>
-              <a href="">contact</a>
+              <span class="icon">
+                <i class="far fa-address-book"></i>
+              </span>
+              <a href="">contact</a>  
             </li>
           </ul>
-          <span class="nav-btn" id="menuBtn" onclick="btnFunction()"></span>
-        </nav>
+          <span class="nav-btn" id="menuBtn"></span>
+        </nav> 
       </div>
-<!--
-      <div class="row">
-        <div class="col-xl-6">
-          <div class="home-intro">
-            <span class="">welcome to my world</span>
-            <h1 class="main-head">Hi, I'm Jone Lee a Devoloper.</h1>
-            <p class="para">I used animation Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta voluptas maxime aut nostrum delectus doloribus debitis nulla in asperiores corrupti.</p>
-            
-              <div class="row">
-                <div class="col-xl-6">
-                  <div class="para">
-                    <span class="">find with us</span>
-                    <div class="icon">
-                      <i class="fab fa-facebook-f"></i>
+      <div class="container-fluid max-width" >
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="home-intro">
+              <span class="">welcome to my world</span>
+              <h1 class="main-head">Hi, I'm Jone Lee a Devoloper.</h1>
+              <p class="para">I used animation Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta voluptas maxime aut nostrum delectus doloribus debitis nulla in asperiores corrupti.</p>
+              
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="para">
+                      <span class="">find with us</span>
+                      <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                      </div>
+                      <div class="icon">
+                        <i class="fab fa-instagram-square"></i>
+                      </div>
+                      <div class="icon">
+                        <i class="fab fa-linkedin-in"></i>
+                      </div>
                     </div>
-                    <div class="icon">
-                      <i class="fab fa-instagram-square"></i>
-                    </div>
-                    <div class="icon">
-                      <i class="fab fa-linkedin-in"></i>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="skill-lab">
+                      <div class="skill">
+                        <img src="image/png/icons-01.png" alt="">
+                      </div>
+                      <div class="skill">
+                        <img src="image/png/icons-02.png" alt="">
+                      </div>
+                      <div class="skill">
+                        <img src="image/png/icons-03.png" alt="">
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6">
-                  <div class="skill-lab">
-                    <div class="skill">
-                      <img src="image/png/icons-01.png" alt="">
-                    </div>
-                    <div class="skill">
-                      <img src="image/png/icons-02.png" alt="">
-                    </div>
-                    <div class="skill">
-                      <img src="image/png/icons-03.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <img src="image/png/banner-01.png" alt="">
           </div>
         </div>
-        <div class="col-xl-6">
-          <img src="image/png/banner-01.png" alt="">
-        </div>
       </div>
--->
     </header>
     <!--------perfomence-section-----------
 
