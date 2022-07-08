@@ -48,7 +48,7 @@ html,body{
     font-weight: 700;
     font-family: $secondaryFont;
     padding-bottom: 10px;
-
+    color: $textColor;
 
 }
 .secondary-head{
@@ -56,26 +56,23 @@ html,body{
     font-weight: 500;
     font-family: $secondaryFont;
     padding-bottom: 10px;
-
+    color: $textColor;
+    line-height: 1.5;
 }
 .small-head{
     font-size: 1.2rem;
     font-weight: 500;
     font-family: $secondaryFont;
     padding-bottom: 10px;
-
+    color: $textColor;
+    line-height: 1.5;
+    
 }
 .flex-content{
     display: flex;
     flex-wrap: wrap;
 }
-.title{
-    color: $primeColor;
-    font-size: 0.75rem;
-    font-weight: 400;
-    padding-bottom: 10px;
 
-}
 .para{
     font-size: 0.75rem;
     font-weight: 400;
@@ -86,9 +83,10 @@ html,body{
 .title{
     font-size: 0.75rem;
     color: $primeColor;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
-
+    padding-bottom: 10px; 
+    letter-spacing: 1px;
 }
 .dif-title{
     font-size: 0.75rem;
@@ -111,13 +109,15 @@ html,body{
 /*===============header-section===============*/
 @import "headerspace"; 
 /*===============perfomence-section===============*/
-@import "perform"
+@import "perform";
 /*===============service-section===============*/
+@import "portfolio";
 /*===============repairs-section===============*/
+@import "resume";
 /*===============inforamtion-section===============*/
 /*===============process-section===============*/
 /*===============article-section===============*/
 /*===============contact-section===============*/
 /*===============about-section===============*/
 /*===============header-section===============*/
-/*===============header-section===============*/
+/*===============header-section===============*/ 

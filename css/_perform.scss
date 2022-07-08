@@ -2,10 +2,21 @@
     padding-top: 50px 0;
 
     h2{
+        padding: 15px 0;
         color: $textColor;
     }
 
     .facility{
+        padding: 50px;
+        border-radius: 15px;
+        box-shadow: $shadow;
+        margin-bottom: 50px;
+
+        h3{
+            color: $textColor;
+            padding-top: 10px;
+        }
+
 
         svg{
             width: 50px;

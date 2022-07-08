@@ -1,0 +1,31 @@
+.perform-space{
+    padding: 50px 0;
+
+    .port-head{
+        padding: 20px 0;
+    }
+
+    .skill-one{
+        padding: 25px;
+        margin-bottom: 50px;
+        box-shadow: $shadow;
+        border-radius: 10px;
+        
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .love-icon{
+            color: $textColor;
+            margin-right: -50px;
+
+            i{
+                margin-right: 5px;
+            }
+        }
+    
+
+    }
+
+
+}

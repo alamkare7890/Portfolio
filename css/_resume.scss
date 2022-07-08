@@ -1,0 +1,33 @@
+.resume-space{
+    padding: 50px 0;
+
+    .resume-nav{
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: $shadow;
+        border-radius: 5px;
+        li{
+            text-align: center;
+            width: 25%;
+            color: $textColor;
+
+            a{
+                color: $textColor;
+                font-size: 0.75rem;
+
+            } 
+            a.active{
+                border-radius: 5px;
+                background-color: $bgColor;
+                box-shadow: $shadow;
+                color: $primeColor;
+                padding: 30px 25px;
+
+            }      
+
+
+        }
+
+    }     
+}

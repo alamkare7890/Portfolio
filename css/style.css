@@ -25,6 +25,7 @@ html, body {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   padding-bottom: 10px;
+  color: #c4cfde;
 }
 
 .secondary-head {
@@ -32,6 +33,8 @@ html, body {
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
   padding-bottom: 10px;
+  color: #c4cfde;
+  line-height: 1.5;
 }
 
 .small-head {
@@ -39,18 +42,13 @@ html, body {
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
   padding-bottom: 10px;
+  color: #c4cfde;
+  line-height: 1.5;
 }
 
 .flex-content {
   display: flex;
   flex-wrap: wrap;
-}
-
-.title {
-  color: #F8024E;
-  font-size: 0.75rem;
-  font-weight: 400;
-  padding-bottom: 10px;
 }
 
 .para {
@@ -64,8 +62,10 @@ html, body {
 .title {
   font-size: 0.75rem;
   color: #F8024E;
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 .dif-title {
@@ -324,7 +324,18 @@ html, body {
   padding-top: 50px 0;
 }
 .feature-space h2 {
+  padding: 15px 0;
   color: #c4cfde;
+}
+.feature-space .facility {
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  margin-bottom: 50px;
+}
+.feature-space .facility h3 {
+  color: #c4cfde;
+  padding-top: 10px;
 }
 .feature-space .facility svg {
   width: 50px;
@@ -332,4 +343,65 @@ html, body {
   color: #F8024E;
   stroke: #F8024E;
   fill: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*===============service-section===============*/
+.perform-space {
+  padding: 50px 0;
+}
+.perform-space .port-head {
+  padding: 20px 0;
+}
+.perform-space .skill-one {
+  padding: 25px;
+  margin-bottom: 50px;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  border-radius: 10px;
+}
+.perform-space .skill-one img {
+  width: 100%;
+  border-radius: 10px;
+}
+.perform-space .skill-one .love-icon {
+  color: #c4cfde;
+  margin-right: -50px;
+}
+.perform-space .skill-one .love-icon i {
+  margin-right: 5px;
+}
+
+/*===============repairs-section===============*/
+.resume-space {
+  padding: 50px 0;
+}
+.resume-space .resume-nav {
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  border-radius: 5px;
+}
+.resume-space .resume-nav li {
+  text-align: center;
+  width: 25%;
+  color: #c4cfde;
+}
+.resume-space .resume-nav li a {
+  color: #c4cfde;
+  font-size: 0.75rem;
+}
+.resume-space .resume-nav li a.active {
+  border-radius: 5px;
+  background-color: #1E2024;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  color: #F8024E;
+  padding: 30px 25px;
+}
+
+/*===============inforamtion-section===============*/
+/*===============process-section===============*/
+/*===============article-section===============*/
+/*===============contact-section===============*/
+/*===============about-section===============*/
+/*===============header-section===============*/
+/*===============header-section===============*//*# sourceMappingURL=style.css.map */
