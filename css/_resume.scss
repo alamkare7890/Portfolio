@@ -29,5 +29,18 @@
 
         }
 
-    }     
+    }  
+    .resume-head{
+        padding: 30px 0;
+
+    }
+
+    .qulification{
+        padding: 50px;
+        background-color: $mainbgColor;
+        box-shadow: $shadow;
+        margin: 0 30px;
+        margin-bottom: 50px;
+        border-radius: 15px;
+    }
 }
