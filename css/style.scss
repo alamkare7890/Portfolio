@@ -84,7 +84,7 @@ ul{
 .para{
     font-size: 0.75rem;
     font-weight: 400;
-    color: $textColor;
+    color: $secondheadColor;
     padding-bottom: 10px;
     line-height: 1.5;
 }
@@ -98,7 +98,7 @@ ul{
 }
 .dif-title{
     font-size: 0.75rem;
-    color: $textColor;
+    color: $secondheadColor;
     font-weight: 400;
     text-transform: uppercase; 
     padding-bottom: 10px;
@@ -161,7 +161,9 @@ ul{
 @import "brand"; 
 /*===============Plan-price-section===============*/
 @import "plan";
+/*===============blog-section===============*/
+@import "blog";
 /*===============contact-section===============*/
-/*===============about-section===============*/
+@import "contact";
 /*===============header-section===============*/
 /*===============header-section===============*/ 

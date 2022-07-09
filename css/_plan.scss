@@ -7,11 +7,76 @@
     }
 
     .price-nav{
+        display: flex;
         background-color: $mainbgColor;
         box-shadow: $shadow;
-        padding: 10px;      
         border-radius: 15px;
         border: none;
+        a{
+            text-align: center; 
+            font-size: 0.75rem;
+            width: 33%;
+            color: $textColor;
+        }
+        .active{
+            background-color: $mainbgColor;
+            box-shadow: $shadow;
+            border: none;
+            border-radius: 15px;
+
+        }   
+
+
+    }   
+    .price{
+        padding: 30px;
+        background-color: $mainbgColor;
+        box-shadow: $shadow;
+
+        h2{
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .tag{
+            color: $primeColor; 
+            font-size: 0.75rem;
+            box-shadow: $shadow;
+            padding: 10px;
+            border-radius: 5px;
+            padding-bottom: 15px;
+        }
+
+        p{
+            color: $secondheadColor;
+        }
+
+        ul{
+            padding: 0 30px;
+            li{
+                color: $textColor;
+                font-size: 0.75rem;
+                padding: 5px 0;
+            }
+
+
+        }
+        .order-btn{
+            box-shadow: $shadow;
+            color: $primeColor;
+            font-size: 0.85rem;
+            font-weight: 300;
+            border-radius: 15px;
+            padding: 18px 0;    
+        
+        }
+        .order-bene{
+            text-align: center;
+            padding-top: 15px;
+
+        }
+
     }
+
 
 }

@@ -769,22 +769,23 @@
       <div class="container-fluid max-width content-width">
         <nav class="">
           <div class="nav price-nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active" id="basicPrice" data-toggle="tab" href="#basicRate" role="tab" aria-controls="basicRate" aria-selected="true">Static</a>
-            <a class="nav-item nav-link" id="standPrice" data-toggle="tab" href="#standRate" role="tab" aria-controls="standRate" aria-selected="false">Standard</a>
-            <a class="nav-item nav-link" id="prePrice" data-toggle="tab" href="#preRate" role="tab" aria-controls="preRate" aria-selected="false">Premium</a>
+              
+              <a class="nav-item nav-link active" id="basicPrice" data-toggle="tab" href="#basicRate" role="tab" aria-controls="basicRate" aria-selected="true">Static</a>
+              <a class="nav-item nav-link" id="standPrice" data-toggle="tab" href="#standRate" role="tab" aria-controls="standRate" aria-selected="false">Standard</a>
+              <a class="nav-item nav-link" id="prePrice" data-toggle="tab" href="#preRate" role="tab" aria-controls="preRate" aria-selected="false">Premium</a>
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="basicRate" role="tabpanel" aria-labelledby="basicPrice">
-             <div class="price">
+          <div class="tab-pane active" id="basicRate" role="tabpanel" aria-labelledby="basicPrice">
+            <div class="price">
               <div class="plan-head">
-                <div class="row">
-                  <div class="col-8">
+                <div class="row justify-content-between">
+                  <div class="col-9">
                     <h2 class="secondary-head">Make Your Single Page</h2> 
                     <span class="dif-title">Elementor</span>
                   </div>
-                  <div class="col-4">
-                    <div class="tag">$30.00</div>
+                  <div class="col-2">
+                    <span class="tag">$30.00</span>
                   </div>
                 </div>
 
@@ -813,15 +814,17 @@
                 </div>
 
               </div>
-              <a href="#" class="btn btn-block">order now</a>
-              <span class="para">
-                <i class="far fa-clock"></i>
-                2 Days Delivery
-              </span>
-              <span class="para">
-                <i class="fas fa-infinity"></i>
-                Unlimited Revission
-              </span>
+              <a href="#" class="btn btn-block order-btn">order now</a>
+              <div class="order-bene">
+                <span class="para">
+                  <i class="far fa-clock"></i>
+                  2 Days Delivery
+                </span>
+                <span class="para">
+                  <i class="fas fa-infinity"></i>
+                  Unlimited Revission
+                </span>
+              </div>
             </div>
 
 
@@ -830,12 +833,12 @@
           <div class="tab-pane fade" id="standRate" role="tabpanel" aria-labelledby="standPrice">
             <div class="price">
               <div class="plan-head">
-                <div class="row">
-                  <div class="col-8">
+                <div class="row justify-content-between">
+                  <div class="col-9">
                     <h2 class="secondary-head">Design Make this Page</h2> 
                     <span class="dif-title">Elementor</span>
                   </div>
-                  <div class="col-4">
+                  <div class="col-2">
                     <div class="tag">$50.00</div>
                   </div>
                 </div>
@@ -865,26 +868,28 @@
                 </div>
 
               </div>
-              <a href="#" class="btn btn-block">order now</a>
-              <span class="para">
-                <i class="far fa-clock"></i>
-                2 Days Delivery
-              </span>
-              <span class="para">
-                <i class="fas fa-infinity"></i>
-                Unlimited Revission
-              </span>
+              <a href="#" class="btn btn-block order-btn">order now</a>
+              <div class="order-bene">
+                <span class="para">
+                  <i class="far fa-clock"></i>
+                  2 Days Delivery
+                </span>
+                <span class="para">
+                  <i class="fas fa-infinity"></i>
+                  Unlimited Revission
+                </span>
+              </div>
             </div>
           </div>
           <div class="tab-pane fade" id="preRate" role="tabpanel" aria-labelledby="prePrice">
              <div class="price">
               <div class="plan-head">
-                <div class="row">
-                  <div class="col-8">
+                <div class="row justify-content-between">
+                  <div class="col-9">
                     <h2 class="secondary-head">Customize Your Single Page</h2> 
                     <span class="dif-title">Elementor</span>
                   </div>
-                  <div class="col-4">
+                  <div class="col-2">
                     <div class="tag">$90.00</div>
                   </div>
                 </div>
@@ -914,36 +919,38 @@
                 </div>
 
               </div>
-              <a href="#" class="btn btn-block">order now</a>
-              <span class="para">
-                <i class="far fa-clock"></i>
-                2 Days Delivery
-              </span>
-              <span class="para">
-                <i class="fas fa-infinity"></i>
-                Unlimited Revission
-              </span>
+              <a href="#" class="btn btn-block order-btn">order now</a>   
+              <div class="order-bene">
+                <span class="para">
+                  <i class="far fa-clock"></i>
+                  2 Days Delivery
+                </span>
+                <span class="para">
+                  <i class="fas fa-infinity"></i>
+                  Unlimited Revission
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!--------blog-section-----------
+    <!--------blog-section------------->
 
     <section class="our-blog">
-      <div class="container-fluid">
+      <div class="container-fluid max-width">
         <div class="row">
           <div class="col-xl-4">
             <div class="blog">
               <img src="image/jpge/blog-01.jpg" alt="">
-              <div class="row">
+              <div class="row py-2">
                 <div class="col-6">
                   <span class="title">camada</span>
                 </div>
-                <div class="col-6">
+                <div class="col-6 ">
                   <i class="far fa-clock"></i>
-                  <span>2min read</span>
+                  <span class="para">2min read</span>
                 </div>
               </div>
               <h3 class="small-head">T-shirt design in hte part of design</h3>
@@ -952,13 +959,13 @@
           <div class="col-xl-4">
             <div class="blog">
               <img src="image/jpge/blog-02.jpg" alt="">
-              <div class="row">
+              <div class="row py-2">
                 <div class="col-6">
                   <span class="title">camada</span>
                 </div>
                 <div class="col-6">
                   <i class="far fa-clock"></i>
-                  <span>2min read</span>
+                  <span class="para">2min read</span>
                 </div>
               </div>
               <h3 class="small-head">T-shirt design in hte part of design</h3>
@@ -967,13 +974,13 @@
           <div class="col-xl-4">
             <div class="blog">
               <img src="image/jpge/blog-03.jpg" alt="">
-              <div class="row">
+              <div class="row py-2">
                 <div class="col-6">
                   <span class="title">camada</span>
                 </div>
-                <div class="col-6">
+                <div class="col-6 ">
                   <i class="far fa-clock"></i>
-                  <span>2min read</span>
+                  <span class="para">2min read</span>
                 </div>
               </div>
               <h3 class="small-head">T-shirt design in hte part of design</h3>
@@ -982,12 +989,13 @@
         </div>
       </div>
     </section>
--->
-    <!--------Contact-section-----------
+    <!--------Contact-section----------->
     <section class="contact-me">
-      <div class="container-fluid">
-        <span class="title">contact</span>
-        <h3 class="secondary-head">Contact With Me</h3>
+      <div class="container-fluid max-width">
+        <div class="contact-head">
+          <span class="title">contact</span>
+          <h3 class="secondary-head">Contact With Me</h3>
+        </div>
         <div class="row">
           <div class="col-xl-6">
             <div class="connect-now">
@@ -996,11 +1004,11 @@
               <span class="para">Chief Operating Officer</span>
               <p class="para">I am available for freelance work. Connect with me via and call to my account.</p>
               <div class="call-me">
-                <span class="para">Phone</span>
+                <span class="para">Phone :</span>
                 <a href="#">+01234567890</a>
               </div>
               <div class="email-me">
-                <span class="para">Email</span>
+                <span class="para">Email :</span>
                 <a href="#">lorem123@gmail.com</a>
               </div>
               <div class="social-icon">
@@ -1018,7 +1026,7 @@
             </div>
           </div>
           <div class="col-xl-6">
-            <form action="">
+            <form action="" class="connect-now">
               <div class="form-row">
                 <div class="col-xl-6">
                   <div class="form-group">
@@ -1042,7 +1050,7 @@
                 <input type="text" class="form-control">
               </div>
               <label for="">your message</label>
-                <textarea name="" id="" cols="100%" rows="2"></textarea>
+                <textarea name="" id="" class="form-control" cols="100%" rows="2"></textarea>
                 <button type="submit" class="btn btn-block">send message
                 <i class="fas fa-arrow-right"></i>
               </button>
@@ -1051,7 +1059,7 @@
         </div>
       </div>
     </section>
--->
+
     <!--------header-section-----------
     <footer class="footer-space">
       <div class="footer">

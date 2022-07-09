@@ -1,0 +1,51 @@
+.contact-me{
+
+    .contact-head{
+
+    }
+    .connect-now{
+        padding: 30px;
+        background-color: $mainbgColor;
+        box-shadow: $shadow;
+        border-radius: 25px;
+        img{
+            width: 100%;    
+            border-radius: 25px;
+
+        }
+        h4{
+            padding: 30px 0 0 0;
+
+        }
+        p{
+            padding: 15px 0;
+        }
+
+        .call-me, .email-me{
+
+            a{
+                color: $textColor;
+                font-size: 0.85rem;
+            }
+        }
+    }
+    
+    form{
+
+        label{
+            color: $textColor;
+        }
+        input, textarea{
+            background-color: $bgColor;
+            box-shadow: $inner-shadow;
+            border: none;
+            outline: none;
+        }
+        textarea{
+            height: 220px;
+        }
+
+    }
+
+
+}

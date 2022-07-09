@@ -1,0 +1,25 @@
+.our-blog{
+    padding: 50px 0;
+
+
+    .blog{
+        padding: 30px;
+        background-color: $mainbgColor;
+        box-shadow: $shadow;
+        border-radius: 15px;
+        img{
+            width: 100%;
+            border-radius: 15px;
+
+        }
+
+        i{
+            color: $textColor;
+            font-size: 0.75rem;
+        }
+
+
+    }
+
+
+}
