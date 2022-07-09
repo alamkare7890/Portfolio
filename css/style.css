@@ -1,6 +1,6 @@
 /*=============Color-variable===========*/
 /*=============Font-variable===========*/
-.testimonial-space .whole-testi .slide-testi-image .slick-prev, .testimonial-space .whole-testi .slide-testi-image .slick-next, .testimonial-space .whole-testi .slide-testi-image .slick-dots li, .testimonial-space .whole-testi .slide-testi-image .slick-dots, .home-space .home-intro .skill-lab .skill, .home-space .home-intro .icon, .navigation .nav-btn {
+.testimonial-space .whole-testi .slide-testi-image .slick-prev, .testimonial-space .whole-testi .slide-testi-image .slick-next, .home-space .home-intro .skill-lab .skill, .home-space .home-intro .icon, .navigation .nav-btn, .slick-dots li, .slick-dots {
   justify-content: center;
   align-items: center;
 }
@@ -18,6 +18,14 @@ html, body {
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
   background-color: #212428;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .main-head {
@@ -82,6 +90,33 @@ html, body {
 
 .design-border {
   border-bottom: 3px solid #1E2024;
+}
+
+.slick-dots {
+  display: flex;
+  flex-wrap: wrap;
+}
+.slick-dots li {
+  height: 12px;
+  width: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.slick-dots li button {
+  z-index: 0;
+  box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+  width: 100%;
+  background-color: #212428;
+  height: 100%;
+  font-size: 0;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+.slick-dots .slick-active {
+  background-color: #F8024E;
 }
 
 /*===============nav-section===============*/
@@ -374,6 +409,9 @@ html, body {
 .resume-space {
   padding: 50px 0;
 }
+.resume-space .resume-head {
+  padding: 30px 0;
+}
 .resume-space .resume-nav {
   height: 100px;
   align-items: center;
@@ -396,9 +434,6 @@ html, body {
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   color: #F8024E;
   padding: 30px 25px;
-}
-.resume-space .resume-head {
-  padding: 30px 0;
 }
 .resume-space .qulification {
   padding: 50px;
@@ -466,32 +501,6 @@ html, body {
   height: 2%;
   background-color: #1c1e22;
 }
-.testimonial-space .whole-testi .slide-testi-image .slick-dots {
-  display: flex;
-  flex-wrap: wrap;
-}
-.testimonial-space .whole-testi .slide-testi-image .slick-dots li {
-  height: 12px;
-  width: 12px;
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-.testimonial-space .whole-testi .slide-testi-image .slick-dots li button {
-  z-index: 0;
-  box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
-  width: 100%;
-  background-color: #212428;
-  height: 100%;
-  font-size: 0;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-}
-.testimonial-space .whole-testi .slide-testi-image .slick-dots .slick-active {
-  background-color: #F8024E;
-}
 .testimonial-space .whole-testi .slide-testi-image .slick-prev, .testimonial-space .whole-testi .slide-testi-image .slick-next {
   background-color: #212428;
   width: 75px;
@@ -516,7 +525,46 @@ html, body {
 }
 
 /*===============process-section===============*/
-/*===============article-section===============*/
+.review-space {
+  padding: 50px 0;
+}
+.review-space .review-head {
+  text-align: center;
+}
+.review-space .brand-slide {
+  padding: 30px;
+}
+.review-space .brand-slide .brand {
+  background-color: #212428;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  margin: 30px;
+  padding: 30px;
+}
+.review-space .brand-slide .brand img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/*===============Plan-price-section===============*/
+.our-price-plan {
+  padding: 50px 0;
+}
+.our-price-plan .content-width {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.our-price-plan .price-nav {
+  background-color: #212428;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+}
+
 /*===============contact-section===============*/
 /*===============about-section===============*/
 /*===============header-section===============*/

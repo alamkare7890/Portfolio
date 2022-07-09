@@ -61,38 +61,7 @@
 
             }
 
-            .slick-dots{
-                display: flex;
-                flex-wrap: wrap;
-                @extend %flexCenter;
-
-                li{
-                    height: 12px;
-                    width: 12px;
-                    display: flex;
-                    flex-wrap: wrap;
-                    @extend %flexCenter;
-                    border-radius: 50%;
-                    margin-right: 20px; 
-                    button{ 
-                        z-index: 0;
-                        box-shadow: $inner-shadow;
-                        width: 100%;    
-                        background-color: $mainbgColor;
-                        height: 100%;
-                        font-size: 0; 
-                        border: none;  
-                        border-radius: 50%;
-                        outline: none;
-                    }
-
-
-                }
-
-                .slick-active{
-                    background-color: $primeColor;  
-                }
-            } 
+            
 
             .slick-prev, .slick-next{
                 background-color: $mainbgColor; 

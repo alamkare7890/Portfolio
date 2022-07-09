@@ -1,0 +1,17 @@
+.our-price-plan{
+    padding: 50px 0;
+
+    .content-width{
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .price-nav{
+        background-color: $mainbgColor;
+        box-shadow: $shadow;
+        padding: 10px;      
+        border-radius: 15px;
+        border: none;
+    }
+
+}

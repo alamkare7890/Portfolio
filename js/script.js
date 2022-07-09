@@ -27,7 +27,15 @@ $(document).ready(function () {
     });
     
 
-/*===========slide-content=========*/
-
+/*===========slide-brand=========*/
+    $('.brand-slide').slick({
+    
+        slidesToShow: 3,
+        slidesToSscroll: 3,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        dots: true,
+    });
  
 })

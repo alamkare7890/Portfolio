@@ -45,6 +45,12 @@ html,body{
     font-family: $headFont;
     background-color: $mainbgColor;
 }
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
 .main-head{
     font-size: 2.5rem;
     font-weight: 700;
@@ -106,6 +112,39 @@ html,body{
 .design-border{
     border-bottom: 3px solid $bgColor;
 }
+.slick-dots{
+    display: flex;
+    flex-wrap: wrap;
+    @extend %flexCenter;
+
+    li{
+        height: 12px;
+        width: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        @extend %flexCenter;
+        border-radius: 50%;
+        margin-right: 20px; 
+        button{ 
+            z-index: 0;
+            box-shadow: $inner-shadow;
+            width: 100%;    
+            background-color: $mainbgColor;
+            height: 100%;
+            font-size: 0; 
+            border: none;  
+            border-radius: 50%;
+            outline: none;
+        }
+
+
+    }
+
+    .slick-active{
+        background-color: $primeColor;  
+    }
+} 
+
 /*===============nav-section===============*/
 @import "navCustom";   
 /*===============header-section===============*/
@@ -119,7 +158,9 @@ html,body{
 /*===============inforamtion-section===============*/
 @import "testi";
 /*===============process-section===============*/
-/*===============article-section===============*/
+@import "brand"; 
+/*===============Plan-price-section===============*/
+@import "plan";
 /*===============contact-section===============*/
 /*===============about-section===============*/
 /*===============header-section===============*/
