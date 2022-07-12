@@ -1,7 +1,12 @@
 .resume-space{
     padding: 50px 0;
-
+    padding-top: 100px;
+    z-index: 0;
     
+    .left-line{
+        position: relative;
+    }
+
     .resume-head{
         padding: 30px 0;
 
@@ -9,7 +14,7 @@
     .resume-nav{
         height: 100px;
         align-items: center;
-        justify-content: center;
+        justify-content: center; 
         box-shadow: $shadow;
         border-radius: 5px;
         li{
@@ -41,6 +46,130 @@
         box-shadow: $shadow;
         margin: 0 30px;
         margin-bottom: 50px;
-        border-radius: 15px;
+        border-radius: 15px;    
+        position: relative;
     }
+    .qulification::before{
+        content: "";
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: #222529;
+        border: 5px solid #17191c;
+        left: -60px;
+        top: 60px;
+    }
+    .qulification:hover:before{
+        background-color: $primeColor;
+    }
+    .qulification::after{
+        content: "";
+        border-radius: 5px;
+        width: 100%;
+        height: 7px;
+        position: absolute;
+        top: 70px;
+        left: -52px;
+        background-color: #17191c;
+        z-index: -1;
+
+    }
+    .left-line::before{
+        content: "";
+        width: 7px;
+        height: 85%;
+        position: absolute;
+        background-color: #17191c;
+        border-radius: 5px;
+    }
+    .left-line::before{
+        left: -20px;
+        bottom: 30px;
+    }
+
+
+    .progress-meter{
+        .skill-meter{
+            width: 95%; 
+            margin: 0 auto;
+            height: 10px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            background-color: $bgColor;
+            margin-top: 20px;
+           
+
+            .photo-skill{
+                background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+                height: 100%;
+                width: 100%;
+                border-radius: 15px;
+            }
+            .figma-skill{
+                background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+                height: 100%;
+                width: 95%;
+                border-radius: 15px;
+            }
+           
+            .adobe-xd-skill{
+                background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+                height: 100%;
+                width: 60%;
+                border-radius: 15px;
+            }
+            .adobe-illus-skill{
+                background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+                height: 100%;
+                width: 70%;
+                border-radius: 15px;
+            }
+            .design-skill{
+                background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+                height: 100%;
+                width: 90%;
+                border-radius: 15px;
+            }
+
+            .html-skill{
+                background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+                height: 100%;
+                width: 85%;
+                border-radius: 15px;
+
+            }
+            .css-skill{
+                background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+                height: 100%;
+                width: 80%;
+                border-radius: 15px;
+            }
+            .js-skill{
+                background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+                height: 100%;
+                width: 90%;
+                border-radius: 15px;
+            }
+            .soft-skill{
+                background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+                height: 100%;
+                width: 75;
+                border-radius: 15px;
+            }
+            .plugin-skill{
+                background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+                height: 100%;
+                width: 70%;
+                border-radius: 15px;
+            }
+
+        }
+        span{
+            padding: 15px 15px 30px 15px;
+        }
+
+    }
+
+
 }

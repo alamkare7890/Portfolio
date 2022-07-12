@@ -1,6 +1,6 @@
 /*=============Color-variable===========*/
 /*=============Font-variable===========*/
-.testimonial-space .whole-testi .slide-testi-image .slick-prev, .testimonial-space .whole-testi .slide-testi-image .slick-next, .home-space .home-intro .skill-lab .skill, .home-space .home-intro .icon, .navigation .nav-btn, .slick-dots li, .slick-dots {
+.contact-me .connect-now .social-icon .icon, .testimonial-space .whole-testi .slide-testi-image .slick-prev, .testimonial-space .whole-testi .slide-testi-image .slick-next, .home-space .home-intro .skill-lab .skill, .home-space .home-intro .icon, .navigation .nav-btn, .slick-dots li, .slick-dots {
   justify-content: center;
   align-items: center;
 }
@@ -86,6 +86,18 @@ ul {
 
 .max-width {
   max-width: 1366px;
+  position: relative;
+}
+
+.max-width::before {
+  content: "";
+  margin-top: 30px;
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  width: 100%;
+  height: 5px;
+  background-color: #1E2024;
 }
 
 .design-border {
@@ -293,7 +305,8 @@ ul {
 }
 /*===============header-section===============*/
 .home-space {
-  padding-bottom: 100px;
+  padding: 50px 0;
+  padding-top: 0;
 }
 .home-space .home-intro {
   border-bottom: 2px solid #1E2024;
@@ -356,7 +369,7 @@ ul {
 
 /*===============perfomence-section===============*/
 .feature-space {
-  padding-top: 50px 0;
+  padding: 50px 0;
 }
 .feature-space h2 {
   padding: 15px 0;
@@ -408,6 +421,11 @@ ul {
 /*===============repairs-section===============*/
 .resume-space {
   padding: 50px 0;
+  padding-top: 100px;
+  z-index: 0;
+}
+.resume-space .left-line {
+  position: relative;
 }
 .resume-space .resume-head {
   padding: 30px 0;
@@ -442,6 +460,116 @@ ul {
   margin: 0 30px;
   margin-bottom: 50px;
   border-radius: 15px;
+  position: relative;
+}
+.resume-space .qulification::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #222529;
+  border: 5px solid #17191c;
+  left: -60px;
+  top: 60px;
+}
+.resume-space .qulification:hover:before {
+  background-color: #F8024E;
+}
+.resume-space .qulification::after {
+  content: "";
+  border-radius: 5px;
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  top: 70px;
+  left: -52px;
+  background-color: #17191c;
+  z-index: -1;
+}
+.resume-space .left-line::before {
+  content: "";
+  width: 7px;
+  height: 85%;
+  position: absolute;
+  background-color: #17191c;
+  border-radius: 5px;
+}
+.resume-space .left-line::before {
+  left: -20px;
+  bottom: 30px;
+}
+.resume-space .progress-meter .skill-meter {
+  width: 95%;
+  margin: 0 auto;
+  height: 10px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  background-color: #1E2024;
+  margin-top: 20px;
+}
+.resume-space .progress-meter .skill-meter .photo-skill {
+  background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+.resume-space .progress-meter .skill-meter .figma-skill {
+  background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+  height: 100%;
+  width: 95%;
+  border-radius: 15px;
+}
+.resume-space .progress-meter .skill-meter .adobe-xd-skill {
+  background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+  height: 100%;
+  width: 60%;
+  border-radius: 15px;
+}
+.resume-space .progress-meter .skill-meter .adobe-illus-skill {
+  background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+  height: 100%;
+  width: 70%;
+  border-radius: 15px;
+}
+.resume-space .progress-meter .skill-meter .design-skill {
+  background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+  height: 100%;
+  width: 90%;
+  border-radius: 15px;
+}
+.resume-space .progress-meter .skill-meter .html-skill {
+  background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+  height: 100%;
+  width: 85%;
+  border-radius: 15px;
+}
+.resume-space .progress-meter .skill-meter .css-skill {
+  background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+  height: 100%;
+  width: 80%;
+  border-radius: 15px;
+}
+.resume-space .progress-meter .skill-meter .js-skill {
+  background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+  height: 100%;
+  width: 90%;
+  border-radius: 15px;
+}
+.resume-space .progress-meter .skill-meter .soft-skill {
+  background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+  height: 100%;
+  width: 75;
+  border-radius: 15px;
+}
+.resume-space .progress-meter .skill-meter .plugin-skill {
+  background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+  height: 100%;
+  width: 70%;
+  border-radius: 15px;
+}
+.resume-space .progress-meter span {
+  padding: 15px 15px 30px 15px;
 }
 
 /*===============inforamtion-section===============*/
@@ -530,9 +658,6 @@ ul {
 }
 .review-space .review-head {
   text-align: center;
-}
-.review-space .brand-slide {
-  padding: 30px;
 }
 .review-space .brand-slide .brand {
   background-color: #212428;
@@ -637,8 +762,11 @@ ul {
 }
 
 /*===============contact-section===============*/
+.contact-me {
+  padding: 50px 0;
+}
 .contact-me .connect-now {
-  padding: 30px;
+  padding: 35px;
   background-color: #212428;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   border-radius: 25px;
@@ -657,18 +785,71 @@ ul {
   color: #c4cfde;
   font-size: 0.85rem;
 }
+.contact-me .connect-now .social-icon {
+  padding: 15px 0;
+}
+.contact-me .connect-now .social-icon .icon {
+  display: flex;
+  margin-top: 20px;
+  color: #c4cfde;
+  width: 65px;
+  height: 65px;
+  background-color: #1E2024;
+  margin-right: 25px;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  border-radius: 5px;
+}
 .contact-me form label {
   color: #c4cfde;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 10px;
 }
 .contact-me form input, .contact-me form textarea {
   background-color: #1E2024;
   box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
   border: none;
   outline: none;
+  font-size: 16px;
+  padding: 20px;
 }
 .contact-me form textarea {
-  height: 220px;
+  height: 235px;
+  margin-bottom: 30px;
+}
+.contact-me form .form-btn {
+  padding: 20px 0;
+  background-color: #1E2024;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  color: #F8024E;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 15px;
 }
 
-/*===============header-section===============*/
+/*===============footer-section===============*/
+.footer-space {
+  padding: 50px 0;
+}
+.footer-space .footer {
+  text-align: center;
+}
+.footer-space .footer img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.footer-space .footer p {
+  padding-top: 20px;
+}
+.footer-space .footer p abbr {
+  color: #F8024E;
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
 /*===============header-section===============*//*# sourceMappingURL=style.css.map */

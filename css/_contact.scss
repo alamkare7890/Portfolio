@@ -1,10 +1,21 @@
+@mixin iconDesign{
+    margin-top: 20px;
+    color: $textColor;
+    width: 65px;
+    height: 65px; 
+    @extend %flexCenter; 
+    background-color: $bgColor; 
+    margin-right: 25px; 
+    box-shadow: $shadow;
+    border-radius: 5px; 
+
+}
+
 .contact-me{
-
-    .contact-head{
-
-    }
+    padding: 50px 0;
+  
     .connect-now{
-        padding: 30px;
+        padding: 35px;
         background-color: $mainbgColor;
         box-shadow: $shadow;
         border-radius: 25px;
@@ -28,22 +39,56 @@
                 font-size: 0.85rem;
             }
         }
+
+        .social-icon{
+            padding: 15px 0;
+        
+           .icon{
+                display: flex;
+                @extend %flexCenter;
+                @include iconDesign;
+            }
+
+        }
+
+
+
     }
     
     form{
 
         label{
             color: $textColor;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-weight: 400;
+            padding-bottom: 10px;
         }
         input, textarea{
             background-color: $bgColor;
             box-shadow: $inner-shadow;
             border: none;
             outline: none;
+            font-size: 16px;
+            padding: 20px;
+
         }
         textarea{
-            height: 220px;
+            height: 235px;
+            margin-bottom: 30px;
         }
+
+        .form-btn{
+            padding: 20px 0;
+            background-color: $bgColor;
+            box-shadow: $shadow;
+            color: $primeColor;
+            font-size: 0.75rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            border-radius: 15px;
+        }
+
 
     }
 

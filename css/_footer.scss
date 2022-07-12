@@ -1,0 +1,25 @@
+.footer-space{
+    padding: 50px 0;
+    .footer{
+        text-align: center;
+
+        img{
+            width: 120px;    
+            height: 120px;
+            object-fit: contain;
+        }
+        p{
+            padding-top: 20px; 
+
+            abbr{
+                color: $primeColor;
+                font-weight: 400;
+                font-size: 1rem;  
+                text-decoration: none;
+            }
+
+        }
+
+    }
+
+}

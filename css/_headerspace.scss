@@ -1,5 +1,8 @@
 .home-space{
-    padding-bottom: 100px;
+    padding: 50px 0;
+    padding-top: 0;
+
+
     .home-intro{
         border-bottom: 2px solid $bgColor;
         padding: 50px 0;
@@ -8,7 +11,7 @@
             color: $headColor;
             line-height: 1.2;
             span{
-                color: $primeColor;
+                color: $primeColor; 
             }
 
         }
