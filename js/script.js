@@ -36,6 +36,27 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 1500,
         dots: true,
+        
+        resposive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,    
+                    slidesToSscroll: 2,
+                
+                }
+
+
+            
+            
+            
+            },
+
+    
+        ]
+        
+        
     });
+    
  
 })

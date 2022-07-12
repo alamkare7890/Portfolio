@@ -406,6 +406,13 @@ ul {
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   border-radius: 10px;
 }
+.perform-space .skill-one h4 {
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
 .perform-space .skill-one img {
   width: 100%;
   border-radius: 10px;
@@ -965,25 +972,24 @@ ul {
   /*=============Color-variable===========*/
   html, body {
     font-size: 18px;
-    line-height: 1.8;
   }
   .main-head {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .secondary-head {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .small-head {
     font-size: 1.2rem;
   }
   .para {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
   .title {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
   .dif-title {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
   .max-width {
     position: relative;
@@ -998,6 +1004,63 @@ ul {
     height: 5px;
     background-color: #1E2024;
   }
+  /*===============nav-section===============*/
+  /*===============header-section===============*/
+  .home-space .image img {
+    height: 530px;
+  }
+  .home-space .home-intro .icon {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  .home-space .home-intro .skill-lab .skill {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  .home-space .home-intro .skill-lab .skill img {
+    width: 50%;
+    height: 20px;
+  }
+  /*===============perfomence-section===============*/
+  /*===============service-section===============*/
+  /*===============resume-section===============*/
+  .resume-space .resume-nav {
+    height: 80px;
+  }
+  .resume-space .resume-nav li a {
+    font-size: 0.95rem;
+  }
+  .resume-space .resume-nav li a.active {
+    padding: 20px;
+  }
+  .resume-space .qulification .rating {
+    right: 20px;
+  }
+  /*===============testimonial-section===============*/
+  .testimonial-space .whole-testi .slide-testi-image .person {
+    padding: 15px;
+  }
+  .testimonial-space .whole-testi .slide-testi-image .about-person {
+    padding: 50px 20px 20px 20px;
+  }
+  .testimonial-space .whole-testi .slide-testi-image .coma {
+    width: 120px;
+    height: 120px;
+  }
+  /*===============process-section===============*/
+  .review-space .brand-slide .brand {
+    margin: 15px;
+    padding: 30px;
+  }
+  .review-space .brand-slide .brand img {
+    height: 180px;
+  }
+  /*===============Plan-price-section===============*/
+  /*===============blog-section===============*/
+  /*===============contact-section===============*/
+  /*===============footer-section===============*/
 }
 @media only screen and (max-width: 991px) {
   /*==========common-classes============*/
@@ -1016,13 +1079,13 @@ ul {
     font-size: 1.2rem;
   }
   .para {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   .title {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   .dif-title {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   .max-width {
     position: relative;
@@ -1039,6 +1102,9 @@ ul {
   }
   /*===============nav-section===============*/
   /*===============header-section===============*/
+  .home-space .image img {
+    height: 450px;
+  }
   /*===============perfomence-section===============*/
   /*===============service-section===============*/
   /*===============repairs-section===============*/

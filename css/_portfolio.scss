@@ -10,7 +10,15 @@
         margin-bottom: 50px;
         box-shadow: $shadow;
         border-radius: 10px; 
-        
+
+        h4{
+            overflow: hidden;
+            -webkit-line-clamp: 1;
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+        }        
+
         img{
             width: 100%;
             border-radius: 10px;
