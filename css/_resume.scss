@@ -41,13 +41,35 @@
 
     }  
     .qulification{
-        padding: 50px;
+        padding: 50px 30px;
         background-color: $mainbgColor;
         box-shadow: $shadow;
         margin: 0 30px;
         margin-bottom: 50px;
         border-radius: 15px;    
         position: relative;
+
+        h3{
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        p{
+            padding-top: 20px;
+        }
+        .rating{
+            padding: 10px;
+            border-radius: 3px;
+            background-color: $bgColor;
+            box-shadow: $shadow;
+            color: $primeColor;
+            font-size: 0.75rem;
+            position: absolute;
+            top: 30%;
+            transform: translateY(-30%);
+            right: 30px;
+        }
+ 
+
     }
     .qulification::before{
         content: "";

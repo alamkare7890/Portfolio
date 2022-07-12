@@ -27,7 +27,11 @@
                 }
 
             }
-        
+            .coma{
+                width: 180px;
+                height: 180px;  
+                opacity: 0.5;
+            }
             .about-person{  
                 margin: 30px 0;
                 margin-right: 50px;
@@ -80,13 +84,13 @@
             .slick-prev{
                 position: absolute;
                 top: 0; 
-                right: 100px;
+                right: 140px;
 
             }
             .slick-next{
                 position: absolute;
                 top: 0; 
-                right: 0;
+                right: 40px;
             }
         }
     }

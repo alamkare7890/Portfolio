@@ -454,13 +454,32 @@ ul {
   padding: 30px 25px;
 }
 .resume-space .qulification {
-  padding: 50px;
+  padding: 50px 30px;
   background-color: #212428;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   margin: 0 30px;
   margin-bottom: 50px;
   border-radius: 15px;
   position: relative;
+}
+.resume-space .qulification h3 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.resume-space .qulification p {
+  padding-top: 20px;
+}
+.resume-space .qulification .rating {
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #1E2024;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  color: #F8024E;
+  font-size: 0.75rem;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-30%);
+  right: 30px;
 }
 .resume-space .qulification::before {
   content: "";
@@ -599,6 +618,11 @@ ul {
 .testimonial-space .whole-testi .slide-testi-image .person h3 {
   padding-bottom: 0;
 }
+.testimonial-space .whole-testi .slide-testi-image .coma {
+  width: 180px;
+  height: 180px;
+  opacity: 0.5;
+}
 .testimonial-space .whole-testi .slide-testi-image .about-person {
   margin: 30px 0;
   margin-right: 50px;
@@ -644,12 +668,12 @@ ul {
 .testimonial-space .whole-testi .slide-testi-image .slick-prev {
   position: absolute;
   top: 0;
-  right: 100px;
+  right: 140px;
 }
 .testimonial-space .whole-testi .slide-testi-image .slick-next {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 40px;
 }
 
 /*===============process-section===============*/
@@ -828,6 +852,11 @@ ul {
   text-transform: uppercase;
   border-radius: 15px;
 }
+.contact-me form input:focus, .contact-me form textarea:focus {
+  background-color: #1E2024;
+  box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+  border: 1px solid #F8024E;
+}
 
 /*===============footer-section===============*/
 .footer-space {
@@ -852,4 +881,145 @@ ul {
   text-decoration: none;
 }
 
-/*===============header-section===============*//*# sourceMappingURL=style.css.map */
+/*===============media-section===============*/
+@media only screen and (max-width: 1680px) {
+  /*==========common-classes============*/
+  /*=============Color-variable===========*/
+  html, body {
+    font-size: 24px;
+    line-height: 1.8;
+  }
+  .main-head {
+    font-size: 2.5rem;
+  }
+  .secondary-head {
+    font-size: 1.5rem;
+  }
+  .small-head {
+    font-size: 1.2rem;
+  }
+  .para {
+    font-size: 0.75rem;
+  }
+  .title {
+    font-size: 0.75rem;
+  }
+  .dif-title {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  html, body {
+    font-size: 24px;
+    line-height: 1.8;
+  }
+  .main-head {
+    font-size: 2.5rem;
+  }
+  .secondary-head {
+    font-size: 1.5rem;
+  }
+  .small-head {
+    font-size: 1.2rem;
+  }
+  .para {
+    font-size: 0.75rem;
+  }
+  .title {
+    font-size: 0.75rem;
+  }
+  .dif-title {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /*==========common-classes============*/
+  /*=============Color-variable===========*/
+  html, body {
+    font-size: 24px;
+    line-height: 1.8;
+  }
+  .main-head {
+    font-size: 2.5rem;
+  }
+  .secondary-head {
+    font-size: 1.5rem;
+  }
+  .small-head {
+    font-size: 1.2rem;
+  }
+  .para {
+    font-size: 0.75rem;
+  }
+  .title {
+    font-size: 0.75rem;
+  }
+  .dif-title {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  /*===============nav-section===============*/
+  /*===============header-section===============*/
+  /*===============perfomence-section===============*/
+  /*===============service-section===============*/
+  /*===============repairs-section===============*/
+  /*===============inforamtion-section===============*/
+  /*===============process-section===============*/
+  /*===============Plan-price-section===============*/
+  /*===============blog-section===============*/
+  /*===============contact-section===============*/
+  /*===============footer-section===============*/
+}
+@media only screen and (max-width: 768px) {
+  /*===============nav-section===============*/
+  /*===============header-section===============*/
+  /*===============perfomence-section===============*/
+  /*===============service-section===============*/
+  /*===============repairs-section===============*/
+  /*===============inforamtion-section===============*/
+  /*===============process-section===============*/
+  /*===============Plan-price-section===============*/
+  /*===============blog-section===============*/
+  /*===============contact-section===============*/
+  /*===============footer-section===============*/
+}
+@media only screen and (max-width: 576px) {
+  /*===============nav-section===============*/
+  /*===============header-section===============*/
+  /*===============perfomence-section===============*/
+  /*===============service-section===============*/
+  /*===============repairs-section===============*/
+  /*===============inforamtion-section===============*/
+  /*===============process-section===============*/
+  /*===============Plan-price-section===============*/
+  /*===============blog-section===============*/
+  /*===============contact-section===============*/
+  /*===============footer-section===============*/
+}
+@media only screen and (max-width: 480px) {
+  /*===============nav-section===============*/
+  /*===============header-section===============*/
+  /*===============perfomence-section===============*/
+  /*===============service-section===============*/
+  /*===============repairs-section===============*/
+  /*===============inforamtion-section===============*/
+  /*===============process-section===============*/
+  /*===============Plan-price-section===============*/
+  /*===============blog-section===============*/
+  /*===============contact-section===============*/
+  /*===============footer-section===============*/
+}
+@media only screen and (max-width: 380px) {
+  /*===============nav-section===============*/
+  /*===============header-section===============*/
+  /*===============perfomence-section===============*/
+  /*===============service-section===============*/
+  /*===============repairs-section===============*/
+  /*===============inforamtion-section===============*/
+  /*===============process-section===============*/
+  /*===============Plan-price-section===============*/
+  /*===============blog-section===============*/
+  /*===============contact-section===============*/
+  /*===============footer-section===============*/
+}/*# sourceMappingURL=style.css.map */
