@@ -31,24 +31,20 @@ $(document).ready(function () {
     $('.brand-slide').slick({
     
         slidesToShow: 3,
-        slidesToSscroll: 3,
+        slidesToScroll: 3,
         arrows: false,
         autoplay: true,
         autoplaySpeed: 1500,
         dots: true,
         
-        resposive: [
+        responsive: [
             {
                 breakpoint: 991,
                 settings: {
                     slidesToShow: 2,    
-                    slidesToSscroll: 2,
+                    slidesToScroll: 2,
                 
-                }
-
-
-            
-            
+                }          
             
             },
 

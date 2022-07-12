@@ -2,7 +2,7 @@
     padding: 50px 0;
 
     .content-width{
-        max-width: 750px;
+        max-width: 60%;
         margin: 0 auto;
     }
 
@@ -43,8 +43,8 @@
             font-size: 0.75rem;
             box-shadow: $shadow;
             padding: 10px;
+            text-align: center;
             border-radius: 5px;
-            padding-bottom: 15px;
         }
 
         p{

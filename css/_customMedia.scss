@@ -174,7 +174,7 @@
 
     .resume-nav{
         height: 80px;
-
+        
         li{
 
             a{
@@ -237,8 +237,40 @@
 
 
 /*===============Plan-price-section===============*/
+.our-price-plan{
+
+    .price-nav{
+        border-radius: 8px;
+
+        a.active{
+            border-radius: 8px;
+        }
+    
+    }
+}
 /*===============blog-section===============*/
+.our-blog{
+
+    .blog{
+        padding: 15px;
+    }
+}
 /*===============contact-section===============*/
+.contact-me{
+
+    form{
+
+        input, textarea{
+            padding: 15px;
+        }
+        textarea{
+            height: 160px;
+        }
+
+    }
+
+}
+
 /*===============footer-section===============*/
 
 
@@ -288,7 +320,7 @@
     .image{
 
         img{
-            height: 450px;
+            height: 550px;
         }
     }
 
@@ -297,13 +329,77 @@
 
 
 /*===============perfomence-section===============*/
+.perform-space{
+
+    .skill-one{
+        padding: 30px 15px;
+        img{
+            height: 220px;
+            object-fit: cover;
+        }
+    }
+}
 /*===============service-section===============*/
-/*===============repairs-section===============*/
+/*===============resume-section===============*/
+.resume-space{
+
+    .resume-nav{
+
+        li{
+            
+        }
+
+    }
+
+}
+
 /*===============inforamtion-section===============*/
 /*===============process-section===============*/
 /*===============Plan-price-section===============*/
+.our-price-plan{
+
+    .content-width{
+        width: 85%;
+    }
+    .price{
+
+        .tag{
+            font-size: 0.95rem;
+        }
+
+        ul{
+            padding: 0 15px;
+        }
+    }
+}
 /*===============blog-section===============*/
+.our-blog{
+
+    .blog{  
+        padding: 30px 15px;
+        margin-bottom: 30px;
+        img{
+            height: 220px;
+            object-fit: cover;
+        }
+
+    }
+
+}
+
 /*===============contact-section===============*/
+.contact-me{
+
+    .connect-now{
+        margin-bottom: 50px;
+
+        img{
+            height: 280px;
+            object-fit: cover;
+        }
+    }
+
+}
 /*===============footer-section===============*/
 
 

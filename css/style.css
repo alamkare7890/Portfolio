@@ -710,7 +710,7 @@ ul {
   padding: 50px 0;
 }
 .our-price-plan .content-width {
-  max-width: 750px;
+  max-width: 60%;
   margin: 0 auto;
 }
 .our-price-plan .price-nav {
@@ -746,8 +746,8 @@ ul {
   font-size: 0.75rem;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   padding: 10px;
+  text-align: center;
   border-radius: 5px;
-  padding-bottom: 15px;
 }
 .our-price-plan .price p {
   color: #878e99;
@@ -1058,8 +1058,23 @@ ul {
     height: 180px;
   }
   /*===============Plan-price-section===============*/
+  .our-price-plan .price-nav {
+    border-radius: 8px;
+  }
+  .our-price-plan .price-nav a.active {
+    border-radius: 8px;
+  }
   /*===============blog-section===============*/
+  .our-blog .blog {
+    padding: 15px;
+  }
   /*===============contact-section===============*/
+  .contact-me form input, .contact-me form textarea {
+    padding: 15px;
+  }
+  .contact-me form textarea {
+    height: 160px;
+  }
   /*===============footer-section===============*/
 }
 @media only screen and (max-width: 991px) {
@@ -1103,16 +1118,50 @@ ul {
   /*===============nav-section===============*/
   /*===============header-section===============*/
   .home-space .image img {
-    height: 450px;
+    height: 550px;
   }
   /*===============perfomence-section===============*/
+  .perform-space .skill-one {
+    padding: 30px 15px;
+  }
+  .perform-space .skill-one img {
+    height: 220px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   /*===============service-section===============*/
-  /*===============repairs-section===============*/
+  /*===============resume-section===============*/
   /*===============inforamtion-section===============*/
   /*===============process-section===============*/
   /*===============Plan-price-section===============*/
+  .our-price-plan .content-width {
+    width: 85%;
+  }
+  .our-price-plan .price .tag {
+    font-size: 0.95rem;
+  }
+  .our-price-plan .price ul {
+    padding: 0 15px;
+  }
   /*===============blog-section===============*/
+  .our-blog .blog {
+    padding: 30px 15px;
+    margin-bottom: 30px;
+  }
+  .our-blog .blog img {
+    height: 220px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   /*===============contact-section===============*/
+  .contact-me .connect-now {
+    margin-bottom: 50px;
+  }
+  .contact-me .connect-now img {
+    height: 280px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   /*===============footer-section===============*/
 }
 @media only screen and (max-width: 768px) {
