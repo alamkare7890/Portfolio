@@ -907,10 +907,24 @@ ul {
   .dif-title {
     font-size: 0.75rem;
   }
+  .max-width {
+    max-width: 1366px;
+    position: relative;
+  }
+  .max-width::before {
+    content: "";
+    margin-top: 30px;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    width: 100%;
+    height: 5px;
+    background-color: #1E2024;
+  }
 }
 @media only screen and (max-width: 1366px) {
   html, body {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.8;
   }
   .main-head {
@@ -930,13 +944,27 @@ ul {
   }
   .dif-title {
     font-size: 0.75rem;
+  }
+  .max-width {
+    position: relative;
+    max-width: 1270px;
+  }
+  .max-width::before {
+    content: "";
+    margin-top: 30px;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    width: 100%;
+    height: 5px;
+    background-color: #1E2024;
   }
 }
 @media only screen and (max-width: 1200px) {
   /*==========common-classes============*/
   /*=============Color-variable===========*/
   html, body {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.8;
   }
   .main-head {
@@ -957,8 +985,58 @@ ul {
   .dif-title {
     font-size: 0.75rem;
   }
+  .max-width {
+    position: relative;
+  }
+  .max-width::before {
+    content: "";
+    margin-top: 30px;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    width: 100%;
+    height: 5px;
+    background-color: #1E2024;
+  }
 }
 @media only screen and (max-width: 991px) {
+  /*==========common-classes============*/
+  /*=============Color-variable===========*/
+  html, body {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  .main-head {
+    font-size: 2.5rem;
+  }
+  .secondary-head {
+    font-size: 1.5rem;
+  }
+  .small-head {
+    font-size: 1.2rem;
+  }
+  .para {
+    font-size: 0.75rem;
+  }
+  .title {
+    font-size: 0.75rem;
+  }
+  .dif-title {
+    font-size: 0.75rem;
+  }
+  .max-width {
+    position: relative;
+  }
+  .max-width::before {
+    content: "";
+    margin-top: 30px;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    width: 100%;
+    height: 5px;
+    background-color: #1E2024;
+  }
   /*===============nav-section===============*/
   /*===============header-section===============*/
   /*===============perfomence-section===============*/
