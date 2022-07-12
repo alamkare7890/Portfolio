@@ -1,6 +1,6 @@
 /*=============Color-variable===========*/
 /*=============Font-variable===========*/
-.contact-me .connect-now .social-icon .icon, .testimonial-space .whole-testi .slide-testi-image .slick-prev, .testimonial-space .whole-testi .slide-testi-image .slick-next, .home-space .home-intro .skill-lab .skill, .home-space .home-intro .icon, .navigation .nav-btn, .slick-dots li, .slick-dots {
+.contact-me .connect-now .social-icon .icon, .our-price-plan .price-nav a.active, .our-price-plan .price-nav, .testimonial-space .whole-testi .slide-testi-image .slick-prev, .testimonial-space .whole-testi .slide-testi-image .slick-next, .home-space .home-intro .skill-lab .skill, .home-space .home-intro .icon, .navigation .nav-btn, .slick-dots li, .slick-dots {
   justify-content: center;
   align-items: center;
 }
@@ -309,7 +309,6 @@ ul {
   padding-top: 0;
 }
 .home-space .home-intro {
-  border-bottom: 2px solid #1E2024;
   padding: 50px 0;
 }
 .home-space .home-intro h1 {
@@ -438,16 +437,18 @@ ul {
   padding: 30px 0;
 }
 .resume-space .resume-nav {
-  height: 100px;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  text-align: center;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   border-radius: 5px;
+  padding: 15px 10px;
 }
 .resume-space .resume-nav li {
   text-align: center;
-  width: 25%;
   color: #c4cfde;
+  width: 25%;
 }
 .resume-space .resume-nav li a {
   color: #c4cfde;
@@ -458,7 +459,7 @@ ul {
   background-color: #1E2024;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   color: #F8024E;
-  padding: 30px 25px;
+  padding: 25px 15px;
 }
 .resume-space .qulification {
   padding: 50px 30px;
@@ -710,27 +711,29 @@ ul {
   padding: 50px 0;
 }
 .our-price-plan .content-width {
-  max-width: 60%;
+  width: 40%;
   margin: 0 auto;
 }
 .our-price-plan .price-nav {
   display: flex;
+  height: 80px;
   background-color: #212428;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   border-radius: 15px;
   border: none;
 }
 .our-price-plan .price-nav a {
+  width: 33%;
   text-align: center;
   font-size: 0.75rem;
-  width: 33%;
   color: #c4cfde;
 }
-.our-price-plan .price-nav .active {
+.our-price-plan .price-nav a.active {
   background-color: #212428;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   border: none;
   border-radius: 15px;
+  padding: 20px;
 }
 .our-price-plan .price {
   padding: 30px;
@@ -928,6 +931,10 @@ ul {
     height: 5px;
     background-color: #1E2024;
   }
+  .our-price-plan .content-width {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width: 1366px) {
   html, body {
@@ -965,6 +972,10 @@ ul {
     width: 100%;
     height: 5px;
     background-color: #1E2024;
+  }
+  .our-price-plan .content-width {
+    width: 60%;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -1024,6 +1035,14 @@ ul {
     height: 20px;
   }
   /*===============perfomence-section===============*/
+  /*.perform-space{
+
+      .skill-one{
+
+
+      }
+
+  }*/
   /*===============service-section===============*/
   /*===============resume-section===============*/
   .resume-space .resume-nav {
@@ -1131,11 +1150,22 @@ ul {
   }
   /*===============service-section===============*/
   /*===============resume-section===============*/
+  /*.resume-space{
+
+      .resume-nav{
+
+          li{
+
+          }
+
+      }
+
+  }*/
   /*===============inforamtion-section===============*/
   /*===============process-section===============*/
   /*===============Plan-price-section===============*/
   .our-price-plan .content-width {
-    width: 85%;
+    width: 65%;
   }
   .our-price-plan .price .tag {
     font-size: 0.95rem;
@@ -1169,10 +1199,20 @@ ul {
   /*===============header-section===============*/
   /*===============perfomence-section===============*/
   /*===============service-section===============*/
-  /*===============repairs-section===============*/
+  /*===============resume-section===============*/
+  .resume-space .resume-nav {
+    flex-direction: row;
+  }
+  .resume-space .resume-nav li {
+    width: 100%;
+  }
   /*===============inforamtion-section===============*/
   /*===============process-section===============*/
   /*===============Plan-price-section===============*/
+  .our-price-plan .content-width {
+    width: 80%;
+    margin: 0 auto;
+  }
   /*===============blog-section===============*/
   /*===============contact-section===============*/
   /*===============footer-section===============*/
@@ -1186,6 +1226,10 @@ ul {
   /*===============inforamtion-section===============*/
   /*===============process-section===============*/
   /*===============Plan-price-section===============*/
+  .our-price-plan .content-width {
+    width: 95%;
+    margin: 0 auto;
+  }
   /*===============blog-section===============*/
   /*===============contact-section===============*/
   /*===============footer-section===============*/
@@ -1194,11 +1238,40 @@ ul {
   /*===============nav-section===============*/
   /*===============header-section===============*/
   /*===============perfomence-section===============*/
+  .feature-space .facility p {
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+  }
   /*===============service-section===============*/
   /*===============repairs-section===============*/
   /*===============inforamtion-section===============*/
   /*===============process-section===============*/
   /*===============Plan-price-section===============*/
+  .our-price-plan .price h2 {
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+  }
+  .our-price-plan .price p {
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+  }
+  .our-price-plan .price ul {
+    padding: 20px 0;
+    margin: 0 -15px;
+  }
+  .our-price-plan .content-width {
+    width: 100%;
+    margin: 0 auto;
+  }
   /*===============blog-section===============*/
   /*===============contact-section===============*/
   /*===============footer-section===============*/
@@ -1207,6 +1280,13 @@ ul {
   /*===============nav-section===============*/
   /*===============header-section===============*/
   /*===============perfomence-section===============*/
+  .feature-space .facility p {
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+  }
   /*===============service-section===============*/
   /*===============repairs-section===============*/
   /*===============inforamtion-section===============*/
