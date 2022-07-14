@@ -23,7 +23,22 @@ $(document).ready(function () {
     $('.slide-testi-image').slick({
         dots: true,
         prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-arrow-left' aria-hidden='true'></i></button>",
-        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-arrow-right' aria-hidden='true'></i></button>"
+        nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-arrow-right' aria-hidden='true'></i></button>",
+        
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                
+                }          
+            
+            },
+           
+
+    
+        ]
+        
     });
     
 
@@ -43,6 +58,15 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 2,    
                     slidesToScroll: 2,
+                
+                }          
+            
+            },
+             {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,    
+                    slidesToScroll: 1,
                 
                 }          
             

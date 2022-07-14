@@ -188,7 +188,6 @@
 .resume-space{
 
     .resume-nav{
-        height: 80px;
         
         li{
 
@@ -370,6 +369,38 @@
 
 /*===============inforamtion-section===============*/
 /*===============process-section===============*/
+/*===============testi-section===============*/
+.testimonial-space{
+
+    .slide-testi-image{
+
+        .person{
+
+            img{
+                height: 350px;
+                object-fit: cover;
+            }
+        }
+
+
+        .coma{
+            display: none;
+        }
+        .person{
+            margin: 0;
+            margin-bottom: 35px;
+        }
+        .about-person{
+            position: relative;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+
+    }
+
+}
+
 /*===============Plan-price-section===============*/
 .our-price-plan{
 
@@ -428,9 +459,12 @@
 .resume-space{
 
     .resume-nav{
-        flex-direction: row;
+        flex-direction: column;
         li{
             width: 100%;
+            a.active{
+                padding: 15px 0;
+            }
         }
 
     }
@@ -438,6 +472,31 @@
 }
 /*===============inforamtion-section===============*/
 /*===============process-section===============*/
+
+.testimonial-space{
+
+    .slide-testi-image{
+
+        .person{
+
+            img{
+                height: 300px;
+                object-fit: cover;
+            }
+        }
+
+        .about-person{
+
+            p{
+                overflow: hidden;
+                -webkit-line-clamp: 3;
+                display: -webkit-box;
+                text-overflow: ellipsis;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+}
 /*===============Plan-price-section===============*/
 .our-price-plan{
 
@@ -454,13 +513,49 @@
 
 }
 @media only screen and (max-width:576px) {
+.max-width{
+    margin-left: -10px;
+    margin-right: -10px;
+
+}
 /*===============nav-section===============*/
 /*===============header-section===============*/
+
+
 /*===============perfomence-section===============*/
 /*===============service-section===============*/
+/*===============resume-section===============*/
+.resume-space{
+
+    .qulification{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+}
 /*===============repairs-section===============*/
+
 /*===============inforamtion-section===============*/
 /*===============process-section===============*/
+.testimonial-space{
+
+    .slide-testi-image{
+        margin: 0 -15px;
+        .person{
+            margin: 0 15px 35px 15px;
+
+            img{
+                height: 280px;
+            }
+        }
+    
+        .about-person{
+            padding: 20px;
+            margin: 0 15px 20px 15px;
+        }
+    }
+}
+
 /*===============Plan-price-section===============*/
 .our-price-plan{
 
@@ -468,16 +563,75 @@
         width: 95%;
         margin: 0 auto;
     }
+
+    .price-nav{
+
+        a{
+            width: 100%;
+            padding: 15px 0;
+        }
+    }
+
+}
+
+/*===============brand-section===============*/
+.review-space{
+
+    .brand-slide{
+
+        .brand{
+            margin: 50px;
+        }
+    }
+
 }
 /*===============blog-section===============*/
 /*===============contact-section===============*/
+.contact-me{
+     .connect-now{
+    
+         img{
+            height: 220px;
+         }
+    }
+}
 /*===============footer-section===============*/
+.footer-space{
 
+    .footer{
+
+        img{    
+            width: 90px;    
+            height: 90px;
+        }
+    }
+
+}
 
 }
 @media only screen and (max-width:480px) {
 /*===============nav-section===============*/
 /*===============header-section===============*/
+.home-space{
+
+    .image{
+    
+        img{
+            height: 450px;
+        }
+
+
+    }
+    .image::before{
+        width: 95%;
+        right: 0;
+        transform: translateX(0);
+    }
+
+
+
+}
+
 /*===============perfomence-section===============*/
 .feature-space{
 
@@ -496,8 +650,48 @@
 }
 /*===============service-section===============*/
 /*===============repairs-section===============*/
+.resume-space{
+
+    .progress-meter{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .qulification{
+        margin-left: -10px;
+        margin-right: -10px;
+        padding: 20px;
+        padding-top: 30px;
+
+        .rating{
+            right: 10px;
+           display: none;
+        }
+
+    }
+    .left-line::before{
+        display: none;
+
+    }
+    .qulification::before{
+       display: none;
+
+    }
+
+}
 /*===============inforamtion-section===============*/
 /*===============process-section===============*/
+.testimonial-space{
+
+    .slide-testi-image{
+
+        .person{
+
+            img{
+                height: 250px;
+            }
+        }
+    }
+}
 /*===============Plan-price-section===============*/
 .our-price-plan{
 
@@ -527,8 +721,29 @@
         margin: 0 auto;
     }
 }
+/*===============brand-section===============*/
+.review-space{
+
+    .brand-slide{
+
+        .brand{
+            margin: 30px;
+        }
+    }
+
+}
 /*===============blog-section===============*/
 /*===============contact-section===============*/
+.contact-me{ 
+    .connect-now{ 
+        padding: 25px 15px;
+        .social-icon{ 
+            .icon{
+                margin-right: 12px;
+            }
+        }
+    }
+}
 /*===============footer-section===============*/
 
 
@@ -536,6 +751,21 @@
 @media only screen and (max-width:380px) {
 /*===============nav-section===============*/
 /*===============header-section===============*/
+.home-space{
+
+    .image{
+    
+        img{
+            height: 400px;
+        }
+
+
+    }
+    .image::before{
+        width: 100%;
+    }
+
+}
 /*===============perfomence-section===============*/
 .feature-space{
 
@@ -557,6 +787,17 @@
 /*===============inforamtion-section===============*/
 /*===============process-section===============*/
 /*===============Plan-price-section===============*/
+/*===============brand-section===============*/
+.review-space{
+
+    .brand-slide{
+
+        .brand{
+            margin: 15px;
+        }
+    }
+
+}
 /*===============blog-section===============*/
 /*===============contact-section===============*/
 /*===============footer-section===============*/

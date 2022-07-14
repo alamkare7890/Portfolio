@@ -8,14 +8,15 @@
 
     .price-nav{
         display: flex;
-        height: 80px;
         @extend %flexCenter;
         background-color: $mainbgColor;
         box-shadow: $shadow;
         border-radius: 15px; 
+        padding: 15px 0;
         border: none;
         a{
             width: 33%;
+            display: inline-block;
             text-align: center; 
             font-size: 0.75rem;
             color: $textColor;
