@@ -1,6 +1,6 @@
 /*=============Color-variable===========*/
 /*=============Font-variable===========*/
-.contact-me .connect-now .social-icon .icon, .our-price-plan .price-nav a.active, .our-price-plan .price-nav, .testimonial-space .slide-testi-image .slick-prev, .testimonial-space .slide-testi-image .slick-next, .home-space .home-intro .skill-lab .skill, .home-space .home-intro .icon, .navigation .nav-btn, .slick-dots li, .slick-dots {
+.contact-me .connect-now .social-icon .icon, .our-price-plan .price-nav a.active, .our-price-plan .price-nav, .testimonial-space .slide-testi-image .slick-prev, .testimonial-space .slide-testi-image .slick-next, .home-space .home-intro .skill-lab .skill, .home-space .home-intro .icon, .navigation .nav-btn, .fixed-btn, .slick-dots li, .slick-dots {
   justify-content: center;
   align-items: center;
 }
@@ -18,6 +18,7 @@ html, body {
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
   background-color: #212428;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -126,9 +127,31 @@ ul {
   border: none;
   border-radius: 50%;
   outline: none;
+  cursor: pointer;
 }
 .slick-dots .slick-active {
   background-color: #F8024E;
+}
+
+.fixed-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1E2024;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  border-radius: 5px;
+  z-index: 100;
+  transition: all 0.4s linear;
+}
+.fixed-btn a {
+  color: #fff;
+}
+
+.fixed-btn:hover {
+  box-shadow: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
 }
 
 /*===============nav-section===============*/
@@ -150,10 +173,21 @@ ul {
 .navigation .nav-whole li a {
   font-size: 0.75rem;
   color: #c4cfde;
+  text-decoration: none;
+  transition: all 0.4s ease;
 }
 .navigation .nav-whole li .icon {
   color: #c4cfde;
   display: none;
+}
+.navigation .nav-whole li a.active {
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  color: #F8024E;
+}
+.navigation .nav-whole li a:hover {
+  color: #F8024E;
 }
 .navigation .nav-btn {
   width: 50px;
@@ -163,6 +197,7 @@ ul {
   display: flex;
   border-radius: 5px;
   display: none;
+  cursor: pointer;
 }
 .navigation .nav-btn::before {
   content: " ";
@@ -327,6 +362,11 @@ ul {
   margin-right: 25px;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.home-space .home-intro .icon:hover {
+  box-shadow: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
 }
 .home-space .home-intro .skill-lab {
   margin-top: 20px;
@@ -338,12 +378,17 @@ ul {
   background-color: #1E2024;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease;
 }
 .home-space .home-intro .skill-lab .skill img {
   width: 75%;
   height: 25px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.home-space .home-intro .skill-lab .skill:hover {
+  box-shadow: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
 }
 .home-space .image {
   position: relative;
@@ -672,6 +717,7 @@ ul {
   color: #c4cfde;
   display: flex;
   z-index: 2;
+  cursor: pointer;
 }
 .testimonial-space .slide-testi-image .slick-prev {
   position: absolute;
@@ -719,7 +765,6 @@ ul {
   background-color: #212428;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   border-radius: 15px;
-  padding: 15px 0;
   border: none;
 }
 .our-price-plan .price-nav a {
@@ -734,7 +779,7 @@ ul {
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   border: none;
   border-radius: 15px;
-  padding: 20px;
+  padding: 25px 0;
 }
 .our-price-plan .price {
   padding: 30px;
@@ -771,6 +816,10 @@ ul {
   font-weight: 300;
   border-radius: 15px;
   padding: 18px 0;
+  transition: all 0.4s linear;
+}
+.our-price-plan .price .order-btn:hover {
+  box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
 }
 .our-price-plan .price .order-bene {
   text-align: center;
@@ -819,6 +868,7 @@ ul {
 .contact-me .connect-now .call-me a, .contact-me .connect-now .email-me a {
   color: #c4cfde;
   font-size: 0.85rem;
+  text-decoration: none;
 }
 .contact-me .connect-now .social-icon {
   padding: 15px 0;
@@ -833,6 +883,11 @@ ul {
   margin-right: 25px;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+.contact-me .connect-now .social-icon .icon:hover {
+  box-shadow: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
 }
 .contact-me form label {
   color: #c4cfde;
@@ -862,6 +917,10 @@ ul {
   font-weight: 400;
   text-transform: uppercase;
   border-radius: 15px;
+  transition: all 0.4s ease;
+}
+.contact-me form .form-btn:hover {
+  box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
 }
 .contact-me form input:focus, .contact-me form textarea:focus {
   background-color: #1E2024;
@@ -1046,6 +1105,9 @@ ul {
   }*/
   /*===============service-section===============*/
   /*===============resume-section===============*/
+  .resume-space .resume-nav {
+    padding: 0;
+  }
   .resume-space .resume-nav li a {
     font-size: 0.95rem;
   }
@@ -1080,6 +1142,7 @@ ul {
   }
   .our-price-plan .price-nav a.active {
     border-radius: 8px;
+    padding: 20px 0;
   }
   /*===============blog-section===============*/
   .our-blog .blog {
@@ -1132,6 +1195,10 @@ ul {
     height: 5px;
     background-color: #1E2024;
   }
+  .fixed-btn {
+    width: 55px;
+    height: 55px;
+  }
   /*===============nav-section===============*/
   /*===============header-section===============*/
   .home-space .image img {
@@ -1183,6 +1250,9 @@ ul {
   .our-price-plan .content-width {
     width: 65%;
   }
+  .our-price-plan .price-nav a.active {
+    padding: 15px 0;
+  }
   .our-price-plan .price .tag {
     font-size: 0.95rem;
   }
@@ -1221,6 +1291,7 @@ ul {
   }
   .resume-space .resume-nav li {
     width: 100%;
+    padding: 5px 0;
   }
   .resume-space .resume-nav li a.active {
     padding: 15px 0;
@@ -1446,4 +1517,5 @@ ul {
   /*===============blog-section===============*/
   /*===============contact-section===============*/
   /*===============footer-section===============*/
-}/*# sourceMappingURL=style.css.map */
+}
+/*===============animation-section===============*//*# sourceMappingURL=style.css.map */

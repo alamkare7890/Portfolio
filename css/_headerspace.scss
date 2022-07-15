@@ -25,8 +25,12 @@
             margin-right: 25px; 
             box-shadow: $shadow;
             border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.4s ease;
         }
-
+        .icon:hover{
+            box-shadow: $shadow-2;
+        }
         .skill-lab{
             margin-top: 20px;
             .skill{
@@ -37,12 +41,16 @@
                 background-color: $bgColor; 
                 box-shadow: $shadow;
                 border-radius: 5px;
-                
+                cursor: pointer;
+                transition: all 0.4s ease;
                 img{
                     width: 75%;
                     height: 25px;
                     object-fit: contain;
                 }
+            }
+            .skill:hover{
+                box-shadow: $shadow-2;
             }
 
         }

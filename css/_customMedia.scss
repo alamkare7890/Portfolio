@@ -188,7 +188,7 @@
 .resume-space{
 
     .resume-nav{
-        
+        padding: 0;
         li{
 
             a{
@@ -258,6 +258,7 @@
 
         a.active{
             border-radius: 8px;
+            padding: 20px 0;
         }
     
     }
@@ -326,6 +327,10 @@
         width: 100%;
         height: 5px;
         background-color: $bgColor;
+    }
+    .fixed-btn{
+        width: 55px;
+        height: 55px;
     }
 /*===============nav-section===============*/
 /*===============header-section===============*/
@@ -407,6 +412,12 @@
     .content-width{
         width: 65%;
     }
+    .price-nav{
+        a.active{
+            padding: 15px 0;
+        }
+
+    }
     .price{
 
         .tag{
@@ -462,6 +473,7 @@
         flex-direction: column;
         li{
             width: 100%;
+            padding: 5px 0;
             a.active{
                 padding: 15px 0;
             }
@@ -545,6 +557,7 @@
 .resume-space{
     padding-top: 50px;
     padding-bottom: 0;
+
     .qulification{
         margin: 0 15px 30px 15px;
     }

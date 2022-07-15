@@ -12,7 +12,6 @@
         background-color: $mainbgColor;
         box-shadow: $shadow;
         border-radius: 15px; 
-        padding: 15px 0;
         border: none;
         a{
             width: 33%;
@@ -28,7 +27,7 @@
             box-shadow: $shadow;
             border: none;
             border-radius: 15px;
-            padding: 20px;
+            padding: 25px 0;
         }   
 
 
@@ -73,7 +72,10 @@
             font-weight: 300;
             border-radius: 15px;
             padding: 18px 0;    
-        
+            transition: all 0.4s linear;
+        }
+        .order-btn:hover{
+            box-shadow: $inner-shadow;
         }
         .order-bene{
             text-align: center;

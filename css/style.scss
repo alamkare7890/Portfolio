@@ -22,6 +22,7 @@ $inner-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgb
     display: inline-block;
     font-size: 0.75rem;
     text-transform: uppercase;
+    cursor: pointer;
 
 }    
      
@@ -44,6 +45,7 @@ html,body{
     line-height: 1.5;
     font-family: $headFont;
     background-color: $mainbgColor;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
@@ -146,6 +148,7 @@ ul{
             border: none;  
             border-radius: 50%;
             outline: none;
+            cursor: pointer;
         }
 
 
@@ -155,7 +158,28 @@ ul{
         background-color: $primeColor;  
     }
 } 
+.fixed-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: $bgColor;
+    box-shadow: $shadow;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    @extend %flexCenter;
+    border-radius: 5px;
+    z-index: 100;
+    transition: all 0.4s linear;
+    a{
+        color: $headColor
+    }
 
+}
+.fixed-btn:hover{
+    box-shadow: $shadow-2;
+
+}
 /*===============nav-section===============*/
 @import "navCustom";   
 /*===============header-section===============*/
@@ -180,3 +204,5 @@ ul{
 @import "footer";
 /*===============media-section===============*/ 
 @import "customMedia";
+/*===============animation-section===============*/ 
+@import "customanimate";

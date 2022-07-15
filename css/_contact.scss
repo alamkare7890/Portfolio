@@ -8,6 +8,7 @@
     margin-right: 25px; 
     box-shadow: $shadow;
     border-radius: 5px; 
+    cursor: pointer;
 
 }
 
@@ -37,6 +38,7 @@
             a{
                 color: $textColor;
                 font-size: 0.85rem;
+                text-decoration: none;
             }
         }
 
@@ -47,8 +49,11 @@
                 display: flex;
                 @extend %flexCenter;
                 @include iconDesign;
+                transition: all 0.4s linear;
             }
-
+            .icon:hover{
+                box-shadow: $shadow-2;
+            }
         }
 
 
@@ -87,6 +92,10 @@
             font-weight: 400;
             text-transform: uppercase;
             border-radius: 15px;
+            transition: all 0.4s ease;
+        }
+        .form-btn:hover{
+            box-shadow: $inner-shadow;
         }
         input:focus, textarea:focus{
             background-color: $bgColor;

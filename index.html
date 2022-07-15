@@ -16,8 +16,13 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="fixed-btn" id="scrollBtn">
+      <a href="#">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
     <!--------header-section----------->
-    <header class="home-space">
+    <header class="home-space" id="home">
       <div class="nav-rel" id="navFixed">
         <nav class="navigation flex-content justify-content-between">
           <a href="#" class="logo">
@@ -28,50 +33,50 @@
               <span class="icon">
                 <i class="fas fa-home"></i>
               </span>
-              <a href="">home</a>
+              <a href="#home" class="active">home</a>
             </li>
             <li>
               <span class="icon">
                 <i class="fas fa-list"></i>
               </span>
-              <a href="">features</a>
+              <a href="#feature">features</a>
             </li>
             <li>
               <span class="icon">
                 <i class="far fa-file"></i>
               </span>
-              <a href="">portfolio</a>
+              <a href="#portfolio">portfolio</a>
             </li>
             <li>
               <span class="icon">
                 <i class="far fa-file"></i>
               </span>
-              <a href="">resume</a>
+              <a href="#resume">resume</a>
             </li>
             <li>
               <span class="icon">
                 <i class="fas fa-dollar-sign"></i>
               </span>
-              <a href="">clients</a>
+              <a href="#client">clients</a>
 
             </li>
             <li>
               <span class="icon">
                 <i class="fas fa-dollar-sign"></i>
               </span>
-              <a href="">pricing</a>
+              <a href="#price">pricing</a>
             </li>
             <li>
               <span class="icon">
                 <i class="fas fa-blog"></i>
               </span>
-              <a href="">blog</a>
+              <a href="#blog">blog</a>
             </li>
             <li>
               <span class="icon">
                 <i class="far fa-address-book"></i>
               </span>
-              <a href="">contact</a>  
+              <a href="#contact">contact</a>  
             </li>
           </ul>
           <span class="nav-btn" id="menuBtn"></span>
@@ -127,7 +132,7 @@
     </header>
     <!--------perfomence-section----------->
 
-    <section class="feature-space">
+    <section class="feature-space" id="feature">
       <div class="container-fluid max-width">
       <span class="title">features</span>
       <h2 class="main-head">What I Do</h2>
@@ -196,7 +201,7 @@
 
     <!--------service-section----------->
 
-    <section class="perform-space">
+    <section class="perform-space" id="portfolio">
       <div class="container-fluid max-width">
         <div class="port-head text-center">
           <span class="title">visit portfolio and keep your feedback</span>
@@ -312,7 +317,7 @@
 
     <!--------repairs-section---------->
 
-    <section class="resume-space">
+    <section class="resume-space" id="resume">
       <div class="container-fluid max-width">
         <ul class="nav nav-pills resume-nav mb-3" id="pills-tab" role="tablist">
           <li class="nav-item">
@@ -623,7 +628,7 @@
 
     <!--------Tesnimonial-section----------->
 
-    <section class="testimonial-space">
+    <section class="testimonial-space" id="client">
       <div class="container-fluid max-width">
         <div class="testi-head">
           <span class="title">what clients say</span>
@@ -746,7 +751,7 @@
 
     <!--------process-section------------->
 
-    <section class="review-space">
+    <section class="review-space" id="client">
       <div class="container-fluid max-width">
         <div class="review-head">
           <span class="title">popular clients</span>
@@ -795,7 +800,7 @@
 
     <!--------pricing-section----------->
 
-    <section class="our-price-plan"> 
+    <section class="our-price-plan" id="price"> 
       <div class="container-fluid max-width content-width">
         <nav class="">
           <div class="nav price-nav nav-tabs" id="nav-tab" role="tablist">
@@ -968,7 +973,7 @@
 
     <!--------blog-section------------->
 
-    <section class="our-blog">
+    <section class="our-blog" id="blog">
       <div class="container-fluid max-width">
         <div class="row">
           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-10 mx-auto">
@@ -1020,7 +1025,7 @@
       </div>
     </section>
     <!--------Contact-section----------->
-    <section class="contact-me">
+    <section class="contact-me" id="contact">
       <div class="container-fluid max-width">
         <div class="contact-head">
           <span class="title">contact</span>

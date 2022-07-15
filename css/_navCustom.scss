@@ -14,13 +14,27 @@
             a{
                 font-size: 0.75rem;
                 color: $textColor;
+                text-decoration: none;
+                transition: all 0.4s ease;
             }
             .icon{
                 color: $textColor;
                 display: none;
             }
 
+            a.active{
+                padding: 10px;
+                border-radius: 3px;
+                box-shadow: $shadow;
+                color: $primeColor;
+            }
+            a:hover{
+                color: $primeColor;
+            }
+
         }
+
+
     }
     
     /*=======menu-btn======*/
@@ -33,6 +47,7 @@
         border-radius: 5px;
         @extend %flexCenter;
         display: none;
+        cursor: pointer;
     } 
 
     .nav-btn::before{

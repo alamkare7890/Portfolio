@@ -78,5 +78,16 @@ $(document).ready(function () {
         
     });
     
+    /*=========scroll-top-btn========*/
+    scrollBtn.onclick = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        
+        })
+    
+    
+    }
+
  
 })
