@@ -1310,6 +1310,9 @@ ul {
     width: 100%;
     padding: 15px 0;
   }
+  .our-price-plan .price-nav .price {
+    border-radius: 5px;
+  }
   /*===============brand-section===============*/
   .review-space .brand-slide .brand {
     margin: 30px;
