@@ -1263,9 +1263,15 @@ ul {
   .feature-space {
     padding-bottom: 0;
   }
+  .feature-space .facility {
+    margin-bottom: 30px;
+  }
   /*===============perfomence-section===============*/
   .perform-space {
     padding-bottom: 0;
+  }
+  .perform-space .skill-one {
+    margin-bottom: 30px;
   }
   /*===============service-section===============*/
   /*===============resume-section===============*/
@@ -1274,8 +1280,7 @@ ul {
     padding-bottom: 0;
   }
   .resume-space .qulification {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 15px 30px 15px;
   }
   /*===============repairs-section===============*/
   /*===============inforamtion-section===============*/
@@ -1297,6 +1302,9 @@ ul {
   .our-price-plan .content-width {
     width: 95%;
     margin: 0 auto;
+  }
+  .our-price-plan .price-nav {
+    margin-bottom: 30px;
   }
   .our-price-plan .price-nav a {
     width: 100%;
