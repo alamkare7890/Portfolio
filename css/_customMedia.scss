@@ -513,16 +513,31 @@
 
 }
 @media only screen and (max-width:576px) {
+.max-width::before{
+    bottom: -25px;
 
+}
 /*===============nav-section===============*/
 /*===============header-section===============*/
+.home-space{
+    padding-bottom: 0;
+    .home-intro{
+        padding-left: 10px; 
+    }
+}
+.feature-space{
+    padding-bottom: 0;
 
-
+}
 /*===============perfomence-section===============*/
+.perform-space{
+    padding-bottom: 0;
+}
 /*===============service-section===============*/
 /*===============resume-section===============*/
 .resume-space{
-
+    padding-top: 50px;
+    padding-bottom: 0;
     .qulification{
         margin-left: 15px;
         margin-right: 15px;
@@ -576,14 +591,19 @@
     .brand-slide{
 
         .brand{
-            margin: 50px;
+            margin: 30px;
         }
     }
 
 }
 /*===============blog-section===============*/
+.our-blog{
+    padding-bottom: 0;
+
+}
 /*===============contact-section===============*/
 .contact-me{
+    padding-bottom: 0;
      .connect-now{
     
          img{

@@ -1249,15 +1249,30 @@ ul {
   /*===============footer-section===============*/
 }
 @media only screen and (max-width: 576px) {
-  .max-width {
-    margin-left: -10px;
-    margin-right: -10px;
+  .max-width::before {
+    bottom: -25px;
   }
   /*===============nav-section===============*/
   /*===============header-section===============*/
+  .home-space {
+    padding-bottom: 0;
+  }
+  .home-space .home-intro {
+    padding-left: 10px;
+  }
+  .feature-space {
+    padding-bottom: 0;
+  }
   /*===============perfomence-section===============*/
+  .perform-space {
+    padding-bottom: 0;
+  }
   /*===============service-section===============*/
   /*===============resume-section===============*/
+  .resume-space {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
   .resume-space .qulification {
     margin-left: 15px;
     margin-right: 15px;
@@ -1289,10 +1304,16 @@ ul {
   }
   /*===============brand-section===============*/
   .review-space .brand-slide .brand {
-    margin: 50px;
+    margin: 30px;
   }
   /*===============blog-section===============*/
+  .our-blog {
+    padding-bottom: 0;
+  }
   /*===============contact-section===============*/
+  .contact-me {
+    padding-bottom: 0;
+  }
   .contact-me .connect-now img {
     height: 220px;
   }
