@@ -21,6 +21,20 @@ html, body {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #F8024E;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+  background-color: #878e99;
+}
+
 a {
   text-decoration: none;
 }
@@ -116,6 +130,7 @@ ul {
   flex-wrap: wrap;
   border-radius: 50%;
   margin-right: 20px;
+  background-color: #F8024E;
 }
 .slick-dots li button {
   z-index: 0;
@@ -1040,6 +1055,9 @@ ul {
 }
 @media only screen and (max-width: 1200px) {
   /*==========common-classes============*/
+  .navigation .nav-whole li a:hover {
+    color: #c4cfde;
+  }
   /*=============Color-variable===========*/
   html, body {
     font-size: 18px;

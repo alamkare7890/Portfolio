@@ -47,6 +47,19 @@ html,body{
     background-color: $mainbgColor;
     scroll-behavior: smooth;
 }
+body::-webkit-scrollbar{
+    width: 7px;
+
+}
+body::-webkit-scrollbar-thumb{
+    background-color: $primeColor;
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-track{
+    box-shadow: $inner-shadow;
+    background-color: $secondheadColor;
+
+} 
 a{
     text-decoration: none;
 }
@@ -138,6 +151,7 @@ ul{
         @extend %flexCenter;
         border-radius: 50%;
         margin-right: 20px; 
+        background-color: $primeColor;
         button{ 
             z-index: 0;
             box-shadow: $inner-shadow;

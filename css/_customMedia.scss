@@ -96,6 +96,17 @@
 
 @media only screen and (max-width:1200px){
 /*==========common-classes============*/
+.navigation{
+
+    .nav-whole{
+
+        li{
+            a:hover{
+                color: $textColor;
+            }
+        }
+    }
+}
 /*=============Color-variable===========*/
     html,body{
         font-size: 18px;
@@ -333,6 +344,7 @@
         height: 55px;
     }
 /*===============nav-section===============*/
+
 /*===============header-section===============*/
 .home-space{
 
