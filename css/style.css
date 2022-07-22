@@ -169,6 +169,12 @@ ul {
 .navigation .nav-whole li {
   margin-left: 25px;
   text-transform: uppercase;
+  /*a.active{
+      padding: 10px;
+      border-radius: 3px;
+      box-shadow: $shadow;
+      color: $primeColor;
+  }*/
 }
 .navigation .nav-whole li a {
   font-size: 0.75rem;
@@ -179,12 +185,6 @@ ul {
 .navigation .nav-whole li .icon {
   color: #c4cfde;
   display: none;
-}
-.navigation .nav-whole li a.active {
-  padding: 10px;
-  border-radius: 3px;
-  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-  color: #F8024E;
 }
 .navigation .nav-whole li a:hover {
   color: #F8024E;
